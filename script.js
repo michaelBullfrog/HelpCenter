@@ -186,7 +186,7 @@ const savedTheme = localStorage.getItem("webexHelpTheme") || "light";
 document.documentElement.dataset.theme = savedTheme;
 updateThemeButton(savedTheme);
 
-const initialHash = window.location.hash.replace("#", "");
+const initialHash = .location.hash.replace("#", "");
 if (initialHash && document.getElementById(initialHash)) {
   activateTab(initialHash);
 }
@@ -196,8 +196,8 @@ if (initialHash && document.getElementById(initialHash)) {
 
 // Optional Webex Space endpoint.
 // Configure this to point to a secure backend proxy. Do NOT put a Webex bot token in this public static site.
-// Example: window.WEBEX_SPACE_ENDPOINT = "https://your-render-app.onrender.com/api/webex-space-message";
-window.WEBEX_SPACE_ENDPOINT = window.WEBEX_SPACE_ENDPOINT || "";
+// Example: .WEBEX_SPACE_ENDPOINT = "https://your-render-app.onrender.com/api/webex-space-message";
+window.WEBEX_SPACE_ENDPOINT = "https://helpcenter-webex-space-api.onrender.com";
 
 function collectFirstDigitalForm() {
   const form = document.querySelector("#firstDigitalPortForm");
