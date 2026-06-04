@@ -12,7 +12,7 @@ const themeText = document.querySelector("#themeText");
 // Configure this after your Render backend is live.
 // Example:
 // window.WEBEX_SPACE_ENDPOINT = "https://your-render-app.onrender.com/api/webex-space-message";
-window.WEBEX_SPACE_ENDPOINT = "https://helpcenter-webex-space-api.onrender.com";
+window.WEBEX_SPACE_ENDPOINT = "https://helpcenter-webex-space-api.onrender.com/api/webex-space-message";
 
 function updateThemeButton(theme) {
   const isDark = theme === "dark";
