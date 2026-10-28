@@ -1,0 +1,1561 @@
+WEBVTT
+
+1
+00:00:38.940 --> 00:00:49.884
+Participant 1: I already resubmitted the, SOW. Yeah, so that or workbook, whatever you want to call it. I don't know if I CC you or not.
+
+2
+00:00:49.884 --> 00:00:52.284
+Participant 2: Hello. Thank you.
+
+3
+00:00:52.284 --> 00:00:56.706
+Participant 3: Hello hello. Hey.
+
+4
+00:00:56.706 --> 00:01:15.385
+Participant 2: Do you, you tell me where I'm with Participant 5. Participant 2's gonna join. He's going to a meeting, but you tell me where I need to be with this phone. I'll show you. So we have a former employee whose phone is still assigned, so we can take it offline and do whatever we want with it, it's not, it's not active, so.
+
+5
+00:01:15.385 --> 00:01:18.982
+Participant 1: Just to confirm, it's the Mac address that Participant 5 sent just a minute.
+
+6
+00:01:18.982 --> 00:01:21.447
+Participant 2: Yes, that's correct. Okay.
+
+7
+00:01:21.447 --> 00:01:25.767
+Participant 1: Who are we going to assign this device to?
+
+8
+00:01:25.767 --> 00:01:30.143
+Participant 2: Good call.
+
+9
+00:01:30.143 --> 00:01:33.828
+Participant 1: I mean I know it's just for testing I can assign it to literally anybody.
+
+10
+00:01:33.828 --> 00:01:35.524
+Participant 2: It's assign it to Participant 5.
+
+11
+00:01:35.524 --> 00:01:42.306
+Participant 1: There, ok. I'm just prepping my side. All I do is literally enter in the MAC address. Most of the heavy lifting here is gonna be you guys.
+
+12
+00:01:42.306 --> 00:01:50.885
+Participant 2: Yeah, so this is this is the phone. Gotcha. Okay. It says faith Brenner. Yep.
+
+13
+00:01:50.885 --> 00:02:01.365
+Participant 1: Alright, so we need to remove it from the RingCentral portal 1st so it deregisters because otherwise it's just gonna come right back up to RingCentral.
+
+14
+00:02:01.365 --> 00:02:04.766
+Participant 2: So what do I have to do? Log in as a super admin?
+
+15
+00:02:04.766 --> 00:02:07.498
+Participant 1: Yep and just delete it out of there. Alright.
+
+16
+00:02:07.498 --> 00:02:11.922
+Participant 2: I gotta I gotta get your I don't know. It's not on my laptop, it's on my deskto.
+
+17
+00:02:11.922 --> 00:02:24.744
+Participant 4: Hey everybody. Hello, call. Do you want to fall into the meeting on yourself? Yeah Participant 3, by the way, in the meantime, I assume we resolved their issue. I Participant 5 resent you that spreadsheet.
+
+18
+00:02:24.744 --> 00:02:27.747
+Participant 2: It doesn't matter. Do you have an answer as to why.
+
+19
+00:02:27.747 --> 00:02:33.607
+Participant 4: I think only named portion of the numbers we actually want to migrate or.
+
+20
+00:02:33.607 --> 00:02:54.106
+Participant 3: That was only the ones that were rejected quote unquote, and you know we see we have the entire list, the ones that we've submitted for are the entire list that you provided, and I as as I said in my email, we got, we actually got approval for some of the numbers, so that makes sense of why you're not seeing the full list that we already have some that approved for the 11th.
+
+21
+00:02:54.106 --> 00:03:00.605
+Participant 4: Really? Yes. Okay. Yep. So the whole discussion we had earlier today is likely moved, right?
+
+22
+00:03:00.605 --> 00:03:16.807
+Participant 3: Correct, yeah, we should be able to get I'm very confident that we'll be able to get the rest of them approved for that same day. We've already got that, the, the new LOA that you guys sent over with Omar's name on it. We already got that submitted, so that's already in process and I'm sure we'll see an update on that in the next day or so.
+
+23
+00:03:16.807 --> 00:03:33.367
+Participant 4: All right, this is great news. Thank you so much for that. So I guess let's let's proceed with your efforts soon as you guys are ready. I think we have all the information. Participant 5, I sent you a screenshot of the back address for that phone.
+
+24
+00:03:33.367 --> 00:03:46.261
+Participant 3: Yep, we have that. He Participant 2's going into the RingCentral portal right now just to delete that device. So when we reboot it, it doesn't automatically. So.
+
+25
+00:03:46.261 --> 00:03:51.541
+Participant 2: I just go to, what should I do here?
+
+26
+00:03:52.483 --> 00:03:54.946
+Participant 2: Remove remove line?
+
+27
+00:03:54.946 --> 00:04:06.999
+Participant 1: Let me see what you're looking at cause it should, I would assume it's in the devices page Make you bigger, give me one.
+
+28
+00:04:08.388 --> 00:04:23.765
+Participant 4: I hate to sound like a tech, but if if you're putting in brand new software into that, there's NO chance it would even look for I just wouldn't communicate with the phone anymore. It'll be like you unplugged the phone.
+
+29
+00:04:23.765 --> 00:04:53.710
+Participant 3: Right, so it's since there's a couple of steps to be done to upgrade the firmware, we're gonna want because and we need to point it initially to Cisco's service servers to grab that firmware. We we just we need to remove it from RingCentral 1st. That way it's not going to like I said reach out and grab it. I'm gonna meet you Participant 2. So it's not gonna reach out and grab it automatically cause it will in the 1st reboot, it's gonna want to go back to where it's configured, so we just wanna.
+
+30
+00:04:53.710 --> 00:05:07.168
+Participant 3: Do it from there so we don't have to, you know, run into that. Alright perfect. We can see your screen now.
+
+31
+00:05:07.168 --> 00:05:11.328
+Participant 1: Get my error gone.
+
+32
+00:05:11.328 --> 00:05:18.644
+Participant 2: Alright, so under phone system, I assume it will be here.
+
+33
+00:05:18.644 --> 00:05:22.905
+Participant 3: Yep, phones and devices Yep. All right.
+
+34
+00:05:22.905 --> 00:05:26.087
+Participant 2: And then I go into.
+
+35
+00:05:26.087 --> 00:05:30.968
+Participant 3: We don't want, we're not company info, you come back out of there, go back to.
+
+36
+00:05:30.968 --> 00:05:31.920
+Participant 2: All numbers?
+
+37
+00:05:31.920 --> 00:05:36.966
+Participant 3: No, it won't be anything to do with like the phone number or the user. It's gonna, we need to remove the device itself.
+
+38
+00:05:36.966 --> 00:05:37.987
+Participant 2: If user.
+
+39
+00:05:37.987 --> 00:05:41.389
+Participant 3: Yep, exactly.
+
+40
+00:05:41.389 --> 00:05:47.647
+Participant 2: Okay? Right, so I can click here, it just says change phone reassigned to.
+
+41
+00:05:47.647 --> 00:05:51.008
+Participant 3: It seem to change yeah click in, right?
+
+42
+00:05:51.008 --> 00:05:55.069
+Participant 2: I can remove line. That's what I wanna do, right?
+
+43
+00:05:55.069 --> 00:05:57.098
+Participant 3: You could do that.
+
+44
+00:05:57.098 --> 00:05:59.428
+Participant 1: He might remove her number.
+
+45
+00:05:59.428 --> 00:06:01.522
+Participant 2: Right. I don't want to.
+
+46
+00:06:01.522 --> 00:06:12.984
+Participant 1: Yeah, is it gonna remove the phone with it or is it just going to remove the number off of her user is my question? That's what I'm concerned about. Yeah, it's just gonna remove the number. Give me [redacted number] s. Give me [redacted number] s.
+
+47
+00:06:12.984 --> 00:06:15.046
+Participant 5: Button?
+
+48
+00:06:15.046 --> 00:06:24.800
+Participant 3: Yeah, it's if you were to hit the change phone and let's see what that does. Yes.
+
+49
+00:06:24.800 --> 00:06:30.263
+Participant 4: Let's be clear by the way, we don't, we're not gonna ever bring this phone back to RingCentral.
+
+50
+00:06:30.263 --> 00:06:33.145
+Participant 2: So we're ok with that.
+
+51
+00:06:33.145 --> 00:06:39.427
+Participant 5: Yeah, except they just don't want that lot, that number that I think we wanted to keep as a212 number, they're trying not to lose that.
+
+52
+00:06:39.427 --> 00:06:42.584
+Participant 3: Well, I don't think it's so you can assign that number.
+
+53
+00:06:42.584 --> 00:06:43.843
+Participant 4: I'm not worried.
+
+54
+00:06:43.843 --> 00:06:47.587
+Participant 3: Yeah, yeah. Control over it. Spectrum. It's it's your spectrum account.
+
+55
+00:06:47.587 --> 00:06:50.968
+Participant 5: So it's even unassign the number it's not gonna change anything really.
+
+56
+00:06:50.968 --> 00:07:12.966
+Participant 3: It's gonna Yeah so you can just hit ok when I would just change phone and hit ok, see what it does. It's interesting that it's making you replace it. Let me see. You should just have an option to remove it.
+
+57
+00:07:12.966 --> 00:07:17.727
+Participant 2: Can we just replace it with the RingCentral app and that there then that way there's NO physical hardware.
+
+58
+00:07:17.727 --> 00:07:30.948
+Participant 3: Yeah, that that would work. That that should work. Yeah let's try that out. Yeah, that's next. That's fine.
+
+59
+00:07:33.669 --> 00:07:36.767
+Participant 3: Yeah, but it's gonna re it's gonna reboot since it was just removed.
+
+60
+00:07:38.906 --> 00:07:44.325
+Participant 1: Yep, there's it's the unassigned phone where you see that. Oh ok yep now we should be able to hopefully.
+
+61
+00:07:44.325 --> 00:07:48.885
+Participant 2: Should I rename this as Cisco test phone?
+
+62
+00:07:49.466 --> 00:07:59.326
+Participant 1: We yeah, I guess. I mean we're gonna try and get rid of it out of here completely. There should be phones and devices in an unassigned tab.
+
+63
+00:07:59.326 --> 00:08:08.923
+Participant 3: There it is unassigned. Yeah. Yep, so then just check the box there on the left side and then you can just and then delete it.
+
+64
+00:08:08.923 --> 00:08:15.529
+Participant 2: Delete it? Yep. Yep.
+
+65
+00:08:15.529 --> 00:08:18.902
+Participant 1: That should have deregistered the phone now.
+
+66
+00:08:18.902 --> 00:08:22.159
+Participant 5: There's smoke coming out of it. Sure.
+
+67
+00:08:22.159 --> 00:08:26.159
+Participant 2: I'm looking for the other Participant 2, just.
+
+68
+00:08:26.159 --> 00:08:44.127
+Participant 2: Yeah. Sure. Dean, I'm doing alright I'm actually on a Zoom call right now, but since you called I I dropped out of the meeting. What's up?
+
+69
+00:08:45.564 --> 00:08:47.548
+Participant 5: Participant 2 you should mute yourself.
+
+70
+00:08:47.548 --> 00:08:56.665
+Participant 3: Yeah, I can I can mute him. I can mute him. Ok, Participant 5 I guess we should be good to start with the steps on the device on the actual physical device now. Alright.
+
+71
+00:08:56.665 --> 00:09:01.467
+Participant 5: But importantly, out of all of us, who's eaten lunch so far today?
+
+72
+00:09:01.467 --> 00:09:05.467
+Participant 3: I I just, I was eating much earlier when, when I was talking to Participant 2 on the phone.
+
+73
+00:09:05.467 --> 00:09:07.807
+Participant 5: Yeah, I I haven't, but I'm not gonna be crying.
+
+74
+00:09:07.807 --> 00:09:14.745
+Participant 3: Okay, I was gonna say alright it'd be be nice I get angry, so that's why I gotta make sure I'm fed, otherwise I get a little short.
+
+75
+00:09:14.745 --> 00:09:17.604
+Participant 5: What a bunch of many.
+
+76
+00:09:19.039 --> 00:09:22.089
+Participant 5: What words did Jesus use? Did you just say nine?
+
+77
+00:09:22.089 --> 00:09:23.586
+Participant 3: Many.
+
+78
+00:09:23.586 --> 00:09:25.940
+Participant 4: Okay, I don't know Participant 3 well enough to call on something in it.
+
+79
+00:09:25.940 --> 00:09:26.883
+Participant 5: Eric.
+
+80
+00:09:26.883 --> 00:09:30.463
+Participant 3: That's alright. I got thick skin. I got thick skin Participant 2.
+
+81
+00:09:30.463 --> 00:09:51.547
+Participant 1: Correct. All right, so in successful. Yeah, we want to restart the phone one more time and then we're going to while it's rebooting hit the cancel button, sorry, I needed to make sure that it was coming back up before we do anything so when you yeah we're gonna reboot the phone.
+
+82
+00:09:51.547 --> 00:09:53.724
+Participant 5: You're.
+
+83
+00:09:53.724 --> 00:10:19.099
+Participant 1: This is all going to be you. The only thing I'm doing is adding the Mac address. This is the worst part I promise, is you doing what you're about to do. Yeah, you can unplug it. It shouldn't be I mean it might be loading, but that should be fine. We're gonna factory reset it anyway. I'm gonna unplug it for a second. Yeah unplug it and then when you see the start screen hit the cancel button, and then you're gonna do when it shows the countdown.
+
+84
+00:10:19.099 --> 00:10:24.759
+Participant 1: Let me let me sorry that's ok. I'm plugging it.
+
+85
+00:10:24.759 --> 00:10:29.665
+Participant 5: Back in, let me get the power there.
+
+86
+00:10:29.665 --> 00:10:39.205
+Participant 1: Then while it's rebooting, there should be a cancel button on they hit that. And then when it shows the countdown hold one, three, and five.
+
+87
+00:10:39.205 --> 00:10:42.535
+Participant 5: I just see the screen.
+
+88
+00:10:42.535 --> 00:10:53.044
+Participant 1: Let me know when you see cancel. There should be a cancel button on there and press that.
+
+89
+00:10:53.044 --> 00:10:55.848
+Participant 5: Blank screen.
+
+90
+00:10:55.848 --> 00:10:58.623
+Participant 1: Participant 2 we can see your.
+
+91
+00:10:58.623 --> 00:11:15.889
+Participant 3: Screen still just a heads up.
+
+92
+00:11:15.889 --> 00:11:20.447
+Participant 3: I don't think there's a way for me to shut his screen off.
+
+93
+00:11:20.447 --> 00:11:21.685
+Participant 5: I can just show.
+
+94
+00:11:21.685 --> 00:11:22.564
+Participant 1: On my screen to.
+
+95
+00:11:22.564 --> 00:11:26.701
+Participant 3: Fix that? Yeah. Yep. Is there anything that you see on it? He's talking to.
+
+96
+00:11:26.701 --> 00:11:30.885
+Participant 1: Okay. Participant 2. What's he talking on Dean for? Dean should be talking on me.
+
+97
+00:11:30.885 --> 00:11:34.405
+Participant 3: Yeah, I'll I'll share my screen then. We'll just.
+
+98
+00:11:34.405 --> 00:11:39.125
+Participant 5: I still have a blank screen, guys.
+
+99
+00:11:39.125 --> 00:11:41.605
+Participant 3: There we go.
+
+100
+00:11:41.605 --> 00:11:45.627
+Participant 1: I was sharing my screen to pull the instructions for these guys.
+
+101
+00:11:45.627 --> 00:11:51.007
+Participant 3: Oh yep go ahead here again.
+
+102
+00:11:51.007 --> 00:12:05.028
+Participant 1: That way you can see the instructions as I'm looking at them in case one you said? No, I just have a blank screen, nothing. Blank screen.
+
+103
+00:12:05.028 --> 00:12:09.769
+Participant 5: No power nor nothing.
+
+104
+00:12:09.769 --> 00:12:16.383
+Participant 1: Can we reboot it one more time? Just unplug the whole thing or Yeah, that's weird that it's just in a blank screen.
+
+105
+00:12:16.383 --> 00:12:19.044
+Participant 2: Thank you, thank you for muting me. I forgot to mute myself.
+
+106
+00:12:19.044 --> 00:12:22.003
+Participant 3: That was, that was Dean.
+
+107
+00:12:22.003 --> 00:12:24.770
+Participant 4: What, what do you want from you?
+
+108
+00:12:24.770 --> 00:12:27.767
+Participant 2: You want to talk to you. All right.
+
+109
+00:12:27.767 --> 00:12:30.403
+Participant 4: So tell him to call me, he knows my number.
+
+110
+00:12:30.403 --> 00:12:33.449
+Participant 2: I he he was trying to call you that, but the.
+
+111
+00:12:33.449 --> 00:12:34.785
+Participant 4: No worries. Let let'.
+
+112
+00:12:34.785 --> 00:12:54.206
+Participant 2: No, NO, I just told him, I just told him DNS is forwarding you the letter from the the previous attorney to, to quash this guy and he said that's all I need. Okay. And then he said Yafa's not getting any emails regarding paid bills, so I said, well, I said, well, verify what email address that should be used and I'll verify it's correct in our system.
+
+113
+00:12:54.206 --> 00:12:58.248
+Participant 4: But in the meantime I sent him all the missing say bills that he wanted, so.
+
+114
+00:12:58.248 --> 00:13:08.727
+Participant 5: We guys, the same thing happened. The poly screen, the poly icon came up, and then it goes blank.
+
+115
+00:13:08.727 --> 00:13:17.504
+Participant 1: And there, let me see real quick. Give me [redacted number] s. Sure sorry one moment. Okay. That's ok.
+
+116
+00:13:17.504 --> 00:13:22.367
+Participant 5: Oh, hold on. Okay, initialize initializing device.
+
+117
+00:13:22.367 --> 00:13:24.127
+Participant 4: Press cancel.
+
+118
+00:13:24.127 --> 00:13:35.904
+Participant 1: It press cancel. Yeah, it might be, it might show in a minute. It just takes a sec on these phones.
+
+119
+00:13:37.029 --> 00:13:48.084
+Participant 1: [Credential and access discussion redacted for publication.]
+
+120
+00:13:57.949 --> 00:14:03.762
+Participant 5: [Credential and access discussion redacted for publication.]
+
+121
+00:14:03.762 --> 00:14:14.147
+Participant 1: [Credential and access discussion redacted for publication.]
+
+122
+00:14:16.997 --> 00:14:27.806
+Participant 5: [Credential and access discussion redacted for publication.]
+
+123
+00:14:27.806 --> 00:14:30.887
+Participant 1: [Credential and access discussion redacted for publication.]
+
+124
+00:14:30.887 --> 00:14:32.924
+Participant 5: [Credential and access discussion redacted for publication.]
+
+125
+00:14:32.924 --> 00:14:43.128
+Participant 1: [Credential and access discussion redacted for publication.]
+
+126
+00:14:43.128 --> 00:14:45.624
+Participant 5: [Credential and access discussion redacted for publication.]
+
+127
+00:14:45.624 --> 00:14:48.725
+Participant 1: [Credential and access discussion redacted for publication.]
+
+128
+00:14:48.725 --> 00:14:56.327
+Participant 5: [Credential and access discussion redacted for publication.]
+
+129
+00:14:56.327 --> 00:15:06.525
+Participant 1: [Credential and access discussion redacted for publication.]
+
+130
+00:15:08.286 --> 00:15:10.789
+Participant 1: [Credential and access discussion redacted for publication.]
+
+131
+00:15:10.789 --> 00:15:13.268
+Participant 5: [Credential and access discussion redacted for publication.]
+
+132
+00:15:13.268 --> 00:15:17.628
+Participant 1: [Credential and access discussion redacted for publication.]
+
+133
+00:15:17.628 --> 00:15:28.406
+Participant 1: [Credential and access discussion redacted for publication.]
+
+134
+00:15:28.406 --> 00:15:31.549
+Participant 5: [Credential and access discussion redacted for publication.]
+
+135
+00:15:31.549 --> 00:15:50.704
+Participant 1: [Credential and access discussion redacted for publication.]
+
+136
+00:15:50.704 --> 00:15:56.308
+Participant 5: [Credential and access discussion redacted for publication.]
+
+137
+00:15:56.308 --> 00:16:00.087
+Participant 1: [Credential and access discussion redacted for publication.]
+
+138
+00:16:00.087 --> 00:16:07.423
+Participant 5: [Credential and access discussion redacted for publication.]
+
+139
+00:16:07.423 --> 00:16:08.665
+Participant 1: [Credential and access discussion redacted for publication.]
+
+140
+00:16:08.665 --> 00:16:11.286
+Participant 5: [Credential and access discussion redacted for publication.]
+
+141
+00:16:11.286 --> 00:16:13.727
+Participant 1: [Credential and access discussion redacted for publication.]
+
+142
+00:16:13.727 --> 00:16:19.604
+Participant 5: [Credential and access discussion redacted for publication.]
+
+143
+00:16:19.604 --> 00:16:30.904
+Participant 1: [Credential and access discussion redacted for publication.]
+
+144
+00:16:30.904 --> 00:16:39.928
+Participant 5: [Credential and access discussion redacted for publication.]
+
+145
+00:16:39.928 --> 00:16:49.064
+Participant 1: [Credential and access discussion redacted for publication.]
+
+146
+00:16:49.064 --> 00:16:56.506
+Participant 5: [Credential and access discussion redacted for publication.]
+
+147
+00:16:56.506 --> 00:17:11.911
+Participant 1: [Credential and access discussion redacted for publication.]
+
+148
+00:17:19.383 --> 00:17:47.929
+Participant 1: [Credential and access discussion redacted for publication.]
+
+149
+00:17:49.968 --> 00:18:05.224
+Participant 1: [Credential and access discussion redacted for publication.]
+
+150
+00:18:05.224 --> 00:18:09.767
+Participant 1: [Credential and access discussion redacted for publication.]
+
+151
+00:18:10.920 --> 00:18:20.209
+Participant 1: [Credential and access discussion redacted for publication.]
+
+152
+00:18:20.209 --> 00:18:26.364
+Participant 5: [Credential and access discussion redacted for publication.]
+
+153
+00:18:26.364 --> 00:18:45.409
+Participant 1: [Credential and access discussion redacted for publication.]
+
+154
+00:18:51.249 --> 00:18:54.684
+Participant 1: [Credential and access discussion redacted for publication.]
+
+155
+00:18:54.684 --> 00:19:02.608
+Participant 4: [Credential and access discussion redacted for publication.]
+
+156
+00:19:02.608 --> 00:19:10.249
+Participant 1: [Credential and access discussion redacted for publication.]
+
+157
+00:19:10.249 --> 00:19:20.809
+Participant 4: [Credential and access discussion redacted for publication.]
+
+158
+00:19:20.809 --> 00:19:25.125
+Participant 1: [Credential and access discussion redacted for publication.]
+
+159
+00:19:25.125 --> 00:19:26.724
+Participant 4: [Credential and access discussion redacted for publication.]
+
+160
+00:19:26.724 --> 00:19:34.187
+Participant 3: [Credential and access discussion redacted for publication.]
+
+161
+00:19:34.187 --> 00:19:43.088
+Participant 5: [Credential and access discussion redacted for publication.]
+
+162
+00:19:43.088 --> 00:19:47.683
+Participant 4: [Credential and access discussion redacted for publication.]
+
+163
+00:19:47.683 --> 00:19:51.947
+Participant 3: [Credential and access discussion redacted for publication.]
+
+164
+00:19:51.947 --> 00:19:57.863
+Participant 5: [Credential and access discussion redacted for publication.]
+
+165
+00:19:57.863 --> 00:19:59.528
+Participant 1: [Credential and access discussion redacted for publication.]
+
+166
+00:19:59.528 --> 00:20:04.869
+Participant 3: [Credential and access discussion redacted for publication.]
+
+167
+00:20:04.869 --> 00:20:09.005
+Participant 1: [Credential and access discussion redacted for publication.]
+
+168
+00:20:09.005 --> 00:20:18.443
+Participant 5: [Credential and access discussion redacted for publication.]
+
+169
+00:20:18.443 --> 00:20:47.005
+Participant 1: [Credential and access discussion redacted for publication.]
+
+170
+00:20:47.005 --> 00:20:47.809
+Participant 3: [Credential and access discussion redacted for publication.]
+
+171
+00:20:47.809 --> 00:20:48.968
+Participant 5: [Credential and access discussion redacted for publication.]
+
+172
+00:20:48.968 --> 00:20:52.908
+Participant 1: [Credential and access discussion redacted for publication.]
+
+173
+00:20:57.804 --> 00:21:03.528
+Participant 5: [Credential and access discussion redacted for publication.]
+
+174
+00:21:03.528 --> 00:21:05.226
+Participant 4: [Credential and access discussion redacted for publication.]
+
+175
+00:21:05.226 --> 00:21:11.528
+Participant 5: [Credential and access discussion redacted for publication.]
+
+176
+00:21:11.528 --> 00:21:23.528
+Participant 1: [Credential and access discussion redacted for publication.]
+
+177
+00:21:23.528 --> 00:21:28.368
+Participant 5: [Credential and access discussion redacted for publication.]
+
+178
+00:21:28.368 --> 00:21:30.210
+Participant 1: [Credential and access discussion redacted for publication.]
+
+179
+00:21:30.210 --> 00:22:01.766
+Participant 5: [Credential and access discussion redacted for publication.]
+
+180
+00:22:01.766 --> 00:22:05.166
+Participant 1: [Credential and access discussion redacted for publication.]
+
+181
+00:22:07.491 --> 00:22:10.828
+Participant 1: [Credential and access discussion redacted for publication.]
+
+182
+00:22:10.828 --> 00:22:15.046
+Participant 5: [Credential and access discussion redacted for publication.]
+
+183
+00:22:15.046 --> 00:22:18.928
+Participant 1: [Credential and access discussion redacted for publication.]
+
+184
+00:22:18.928 --> 00:22:23.048
+Participant 4: [Credential and access discussion redacted for publication.]
+
+185
+00:22:23.048 --> 00:22:29.890
+Participant 3: [Credential and access discussion redacted for publication.]
+
+186
+00:22:29.890 --> 00:22:36.488
+Participant 5: [Credential and access discussion redacted for publication.]
+
+187
+00:22:36.488 --> 00:22:46.234
+Participant 3: [Credential and access discussion redacted for publication.]
+
+188
+00:22:46.234 --> 00:22:49.165
+Participant 5: [Credential and access discussion redacted for publication.]
+
+189
+00:22:49.165 --> 00:22:52.208
+Participant 1: [Credential and access discussion redacted for publication.]
+
+190
+00:22:52.208 --> 00:22:55.851
+Participant 5: [Credential and access discussion redacted for publication.]
+
+191
+00:22:55.851 --> 00:23:03.846
+Participant 1: Hi yep and then the TLS security TLS security.
+
+192
+00:23:03.846 --> 00:23:05.093
+Participant 5: You see it?
+
+193
+00:23:05.093 --> 00:23:09.286
+Participant 3: You might need to scroll, there's NO I got it. I got TLS security.
+
+194
+00:23:09.286 --> 00:23:13.967
+Participant 1: PLS applications, PLS applications.
+
+195
+00:23:14.843 --> 00:23:16.288
+Participant 5: Got it.
+
+196
+00:23:16.288 --> 00:23:19.887
+Participant 1: Provisioning.
+
+197
+00:23:19.887 --> 00:23:21.404
+Participant 5: Got it.
+
+198
+00:23:21.404 --> 00:23:25.603
+Participant 1: PLS protocol.
+
+199
+00:23:25.603 --> 00:23:27.086
+Participant 5: Got it.
+
+200
+00:23:27.086 --> 00:23:32.335
+Participant 1: And then select SSL V2/V3.
+
+201
+00:23:32.335 --> 00:23:34.285
+Participant 5: Got it.
+
+202
+00:23:34.285 --> 00:23:37.486
+Participant 1: And then go to network configuration.
+
+203
+00:23:37.486 --> 00:23:45.347
+Participant 5: I hit select and it doesn't go to the next screen. I could hit back.
+
+204
+00:23:45.347 --> 00:23:50.887
+Participant 3: So you probably need to go back into the admin settings main menu, I would imagine.
+
+205
+00:23:50.887 --> 00:23:53.361
+Participant 5: Alright, but SSL is checked.
+
+206
+00:23:53.361 --> 00:23:54.665
+Participant 3: Perfect. Okay.
+
+207
+00:23:54.665 --> 00:23:57.546
+Participant 1: V two and V three, correct? Correct.
+
+208
+00:23:57.546 --> 00:24:00.867
+Participant 5: TLS protocol or you want me to go all the way back?
+
+209
+00:24:00.867 --> 00:24:12.010
+Participant 1: Just a select option one. It's, I apologize. It's been a little bit since I've done one of these. No fun. You'll likely be in the normal admin settings because it says.
+
+210
+00:24:12.010 --> 00:24:19.146
+Participant 3: Network configuration, I imagine it's gonna be in the out of the TLS, so just hit back until you get back to the normal admin settings menu.
+
+211
+00:24:19.146 --> 00:24:21.287
+Participant 5: Admin settings, ok.
+
+212
+00:24:21.287 --> 00:24:27.307
+Participant 3: And you want to find network configuration now? Yes. You are correct.
+
+213
+00:24:27.307 --> 00:24:34.765
+Participant 5: Network configuration, provisioning server. Yep, that's what we're looking for. Got it.
+
+214
+00:24:34.765 --> 00:24:39.324
+Participant 3: Okay, and then you're gonna wanna go to highlight the go to the DHCP menu?
+
+215
+00:24:39.324 --> 00:24:41.864
+Participant 5: Yep. It.
+
+216
+00:24:41.864 --> 00:24:53.386
+Participant 3: Then you should see a boot server, a boot option. Select that, and then it's gonna give you probably a few options and then pick static. Select that.
+
+217
+00:24:53.386 --> 00:24:54.687
+Participant 5: Done?
+
+218
+00:24:54.687 --> 00:25:00.649
+Participant 3: Okay, and then you can, you can exit the, the DHCP menu.
+
+219
+00:25:00.649 --> 00:25:02.086
+Participant 5: Okay, and then you should.
+
+220
+00:25:02.086 --> 00:25:05.448
+Participant 3: And then go to server type that should be on the the menu you're on right now.
+
+221
+00:25:05.448 --> 00:25:06.947
+Participant 5: Yep.
+
+222
+00:25:06.947 --> 00:25:14.444
+Participant 3: Yep select that. Done. And then select HTTPS, then press ok after.
+
+223
+00:25:14.444 --> 00:25:15.727
+Participant 5: Done.
+
+224
+00:25:15.727 --> 00:25:23.847
+Participant 3: Okay, now yep correct Select that. Yep. And then we are doing.
+
+225
+00:25:23.847 --> 00:25:30.624
+Participant 1: Yeah, I was gonna say this is the fun part. You have to enter in this right here, the HTTPS. Okay hold on.
+
+226
+00:25:30.624 --> 00:25:39.168
+Participant 5: Address. I just gotta highlight that, ok. Oh cause I'm on freaking numbers, that's very annoying. Okay.
+
+227
+00:25:39.168 --> 00:25:51.325
+Participant 3: Yeah, here, let me Gabe, do you wanna just highlight that maybe and we can maybe make it a little. I think hold on, I went back.
+
+228
+00:25:51.325 --> 00:26:04.545
+Participant 5: No, I wasn't supposed to go back. I'm back on network configuration. **** it. I hit the arrow.
+
+229
+00:26:04.545 --> 00:26:08.474
+Participant 1: We want to get to the DHCP menu again.
+
+230
+00:26:08.474 --> 00:26:19.785
+Participant 5: Let me try to resume set up, provisioning server, is that what we were on?
+
+231
+00:26:19.785 --> 00:26:33.868
+Participant 3: We're looking for server address, which should be in the the provisioning server DHCP boot server static is selected. Yep, you got it. DHC.
+
+232
+00:26:33.868 --> 00:26:43.689
+Participant 5: Menu yep and then boot server was static. Yep, but click on that.
+
+233
+00:26:43.689 --> 00:26:53.124
+Participant 3: That should be well if it's already static, then you should be good. You can, you can back out of that menu then. And then, you should look for a server type option now.
+
+234
+00:26:53.124 --> 00:26:59.527
+Participant 5: Server type, I see it. Yep. And I hit HTTPS, that's checked. Yep.
+
+235
+00:26:59.527 --> 00:27:02.245
+Participant 3: You can press the ok.
+
+236
+00:27:02.245 --> 00:27:04.107
+Participant 5: Okay, now server address.
+
+237
+00:27:04.107 --> 00:27:06.726
+Participant 3: Yes yep Select that.
+
+238
+00:27:06.726 --> 00:27:25.485
+Participant 5: Alright, so now I have the number four hold on I have the number four, which I I don't want because I have to use HTTPS, so how do I delete four with and it's not that little back arrow cause that took me back to the last menu.
+
+239
+00:27:25.485 --> 00:27:29.549
+Participant 3: Yeah, let me see.
+
+240
+00:27:29.549 --> 00:27:34.025
+Participant 1: They will. What? Oh, sorry, go ahead. I need to.
+
+241
+00:27:34.025 --> 00:27:41.347
+Participant 5: Delete that for. Oh, ok. Participant 2 did it. So I need to do.
+
+242
+00:27:41.347 --> 00:27:45.066
+Participant 3: Yep, we put it in the, in the Webex chat there, but I'm gonna let me.
+
+243
+00:27:45.066 --> 00:28:00.489
+Participant 5: Okay, I got H, UTP. Yep. This is a pain in the ***. Oh, I did let's go back. Uppercase lowercase doesn't matter, right?
+
+244
+00:28:00.489 --> 00:28:01.406
+Participant 3: Nope.
+
+245
+00:28:01.406 --> 00:28:04.490
+Participant 1: All has to be lowercase.
+
+246
+00:28:04.490 --> 00:28:14.144
+Participant 3: Is it giving you This should be in numeric, I believe this should be the.
+
+247
+00:28:14.144 --> 00:28:20.103
+Participant 5: I got HTTPS and then how do I get a colon?
+
+248
+00:28:20.103 --> 00:28:24.847
+Participant 3: I think it should be a period likely I imagine.
+
+249
+00:28:26.446 --> 00:28:28.904
+Participant 3: It's like a, a.
+
+250
+00:28:28.904 --> 00:28:32.685
+Participant 1: It's either the one or the.
+
+251
+00:28:32.685 --> 00:28:34.728
+Participant 5: The star of the pound?
+
+252
+00:28:34.728 --> 00:28:44.648
+Participant 1: Yeah, it's gonna be one of those three. It's either one star pound and one of those should pop up with a colon and the slashes. Nope, that's not right?
+
+253
+00:28:51.366 --> 00:28:54.448
+Participant 5: Oops.
+
+254
+00:28:55.304 --> 00:28:58.045
+Participant 5: All that all that.
+
+255
+00:28:58.045 --> 00:28:59.529
+Participant 3: Yeah, it's gonna be a star.
+
+256
+00:28:59.529 --> 00:29:11.205
+Participant 5: My lon yep colon and now I need to do two slashes. My slashes are the wrong way. Does that matter?
+
+257
+00:29:11.205 --> 00:29:16.166
+Participant 1: Yes, it does matter. They have to be forward slashes.
+
+258
+00:29:16.166 --> 00:29:36.007
+Participant 5: I hit the wrong thingy again, provisioning server. What was I on server address, right? Yes. Okay, that's good. It just, it just deleted everything I got so far.
+
+259
+00:29:36.007 --> 00:29:47.468
+Participant 3: Here, this might be once you get past the HTTPS.
+
+260
+00:29:47.468 --> 00:29:53.709
+Participant 5: No, it has to be lowercase. It has to be lowercase? Yeah. Yeah, it does matter.
+
+261
+00:29:53.709 --> 00:29:59.085
+Participant 1: It says it's case sensitive URL right here.
+
+262
+00:30:01.328 --> 00:30:05.225
+Participant 5: Where is the, where is the, highlighted again? The 1st one?
+
+263
+00:30:05.225 --> 00:30:06.366
+Participant 3: Yeah. Yes yep we need.
+
+264
+00:30:06.366 --> 00:30:12.845
+Participant 1: The US in the US, this one. Okay.
+
+265
+00:30:16.226 --> 00:30:43.379
+Participant 5: Student, yeah. Nope, it's not that's not right. The other one? Maybe. Yeah, there you go. P L C M E L, C, M.
+
+266
+00:30:43.379 --> 00:30:49.803
+Participant 5: Dot sip flash.
+
+267
+00:30:49.803 --> 00:30:51.265
+Participant 1: You got the.in there you said, right.
+
+268
+00:30:51.265 --> 00:31:25.508
+Participant 5: You? Okay.
+
+269
+00:31:25.508 --> 00:31:50.084
+Participant 1: Let me know once you type zip flash and.com in there all. Awesome. All right. Hit ok. I'm there. Yep. And then back or left twice to reach the save config screen. And then it's going to say yes to begin the the yes soft key to begin the reboot sequence.
+
+270
+00:31:50.084 --> 00:32:08.005
+Participant 5: Reboot initiated single thing I opened, another phone. That phone might take a stock, but it.
+
+271
+00:32:08.005 --> 00:32:09.808
+Participant 1: Should come back up.
+
+272
+00:32:09.808 --> 00:32:17.004
+Participant 5: It's already coming back up. Okay.
+
+273
+00:32:17.004 --> 00:32:38.399
+Participant 1: I don't need to share my screen anymore, and you'll know before I do whether that phone comes back up online, it takes a secret to pop up on my end.
+
+274
+00:32:38.399 --> 00:32:48.587
+Participant 1: Yeah. But it should come up with an extension, and everything.
+
+275
+00:32:48.587 --> 00:32:52.044
+Participant 5: Says provisioning successful. Right.
+
+276
+00:32:52.044 --> 00:32:54.826
+Participant 1: Cool, it's a good thing.
+
+277
+00:32:54.826 --> 00:32:57.486
+Participant 5: Rebuild initiated.
+
+278
+00:32:57.486 --> 00:33:06.419
+Participant 1: It goes through a couple of reboots here. Got it.
+
+279
+00:33:06.419 --> 00:33:27.650
+Participant 1: Yeah wish the process was a little bit better to do these phones. There's unfortunately NO real way to do these in bulk. They all do have to be touched individually like that.
+
+280
+00:33:27.650 --> 00:33:32.167
+Participant 5: Well, we have all the rest of the phones to look forward to, so.
+
+281
+00:33:32.167 --> 00:33:53.186
+Participant 1: Yeah, NO, I just I wanted to make you guys full aware, be completely transparent with you that this is the process for each one and then I throw the Mac address in and select the right device and it just, it should by all means come back up after a couple of reboots. I think it's like two to five reboots, it depends.
+
+282
+00:33:53.186 --> 00:33:55.901
+Participant 5: It says downloading new application.
+
+283
+00:33:55.901 --> 00:33:58.124
+Participant 1: Okay yep, that's a good sign.
+
+284
+00:33:58.124 --> 00:34:10.421
+Participant 4: Which means that it's pointing to the Webex server, correct? Yep. And this will also do the firmware, so that's the most up to date firmware.
+
+285
+00:34:10.421 --> 00:34:15.246
+Participant 1: It should yes.
+
+286
+00:34:15.246 --> 00:34:24.108
+Participant 4: I've reached my meeting. I'm gonna call you back for an update soon. But you don't need me for this, right? No.
+
+287
+00:34:24.108 --> 00:34:27.648
+Participant 5: Participant 5 needs to be.
+
+288
+00:34:27.648 --> 00:34:31.105
+Participant 4: It just wants food for me.
+
+289
+00:34:31.105 --> 00:34:32.126
+Participant 5: Thank you there.
+
+290
+00:34:32.126 --> 00:34:44.859
+Participant 1: I'm unzipping. I like to work with you guys. You guys are funny. Oh, we wanted a test number, right? I apologize, I totally have to throw one in if we wanted to do test calling.
+
+291
+00:34:44.859 --> 00:34:47.601
+Participant 5: Yeah, we should try it. Okay.
+
+292
+00:34:47.601 --> 00:34:57.069
+Participant 1: Give me [redacted number] s, let me grab a test number. Okay. It's gonna show as your main number temporarily, but, you can call out of it, you won't be able to call in unless I assign it to.
+
+293
+00:34:57.069 --> 00:35:00.848
+Participant 5: Why does it have to be the main number? I wouldn't want to mess with our main number. Let's just.
+
+294
+00:35:00.848 --> 00:35:25.648
+Participant 1: No, NO, ok, so let me clarify that. So I have to set a main number for calls to go in and out of the system. It doesn't need to be permanent. It's just temporarily I set the temp number as the main number just so you can do testing on our network. No exactly, it's not gonna do anything on your guys's stuff. Yeah. No, NO, it does nothing to your current stuff I promise.
+
+295
+00:35:25.648 --> 00:35:26.926
+Participant 5: Yeah. Are you just gonna find.
+
+296
+00:35:26.926 --> 00:35:43.746
+Participant 1: Send that temporary number real quick, I sent it to one of my coworkers so I wouldn't forget that Did it go?
+
+297
+00:35:43.746 --> 00:35:47.305
+Participant 5: Can't hold it back anymore.
+
+298
+00:35:47.305 --> 00:35:50.381
+Participant 1: It's still going through its process, correct? Yes.
+
+299
+00:35:50.381 --> 00:36:00.364
+Participant 5: Recycle.
+
+300
+00:36:00.364 --> 00:36:12.690
+Participant 1: Restart.
+
+301
+00:36:12.690 --> 00:36:29.225
+Participant 5: Okay bless you. Yeah.
+
+302
+00:36:29.225 --> 00:36:36.550
+Participant 1: Alright, you should be able to call out of that once it comes back up fully and I see it's offline on my end, so that's a good.
+
+303
+00:36:36.550 --> 00:36:39.205
+Participant 5: Wine unregistered.
+
+304
+00:36:39.205 --> 00:37:04.485
+Participant 1: Give it a moment here. Here it is, should I say ok? Give it a second here. Let me double check to make sure it has an IP on my end. Yeah, you can hit ok. Okay, then give it a second it should you want to see that as a dial tone? It does not. Does not yet. Okay.
+
+305
+00:37:04.485 --> 00:37:07.967
+Participant 5: Service unavailable. Service unavailable.
+
+306
+00:37:07.967 --> 00:37:21.329
+Participant 1: Give it a second here because I see it's registered, it has an IP address that says everything it's supposed to be seeing on mine, so let's give it a moment. We might just have to reboot it one more at a time.
+
+307
+00:37:21.329 --> 00:37:23.943
+Participant 5: Now I have a, now I have another.
+
+308
+00:37:23.943 --> 00:37:36.746
+Participant 1: Awesome. Here hold on. Follow your cell phone or however you want to do it, it should dial out. Yeah, I see it online and it just takes a moment.
+
+309
+00:37:36.746 --> 00:37:49.778
+Participant 5: Please keep you a message at the. So it did, it didn't dial, but it did reach my cell phone. Okay. Hey, it's me calling from myself. Thank you. So I should get a voicemail now, right?
+
+310
+00:37:49.778 --> 00:37:55.547
+Participant 1: Yes sir. You won't be able to call the number back because I haven't assigned it to anything besides it being the.
+
+311
+00:37:55.547 --> 00:38:00.907
+Participant 5: So why didn't why did it go directly to voicemail on myself?
+
+312
+00:38:00.907 --> 00:38:04.047
+Participant 1: It didn't ring on the phone. It it just.
+
+313
+00:38:04.047 --> 00:38:07.083
+Participant 5: Immediately had my.
+
+314
+00:38:07.083 --> 00:38:21.243
+Participant 1: That is a good question. I genuinely don't know off the top of my head. It should ring you, it might just be still finishing what it's doing. You're not on Dnd or anything, right? No? Okay.
+
+315
+00:38:21.243 --> 00:38:25.979
+Participant 5: And I was holding my phone it didn't, it didn't even ring. Okay.
+
+316
+00:38:25.979 --> 00:38:47.307
+Participant 1: Do me a favor, call I'm gonna give you another number to call. It's gonna be my cell phone I just want to see if it goes to my voicemail or if it rings. What is it? [redacted number]. Let me know if that just goes right to my voicemail. That comes up, that comes up.
+
+317
+00:38:47.307 --> 00:38:49.925
+Participant 5: Awesome.
+
+318
+00:38:49.925 --> 00:39:05.065
+Participant 1: That's weird. Yeah you want to try yourself one more time? This isn't Yeah, I think I see the issue with this number. It shows up as spam for me. Our test numbers sometimes do that. So it might just be auto blocking it.
+
+319
+00:39:05.065 --> 00:39:10.726
+Participant 5: It is auto blocking it, it's showing. Yeah, it's just going directly to my my voicemail. Yeah, so.
+
+320
+00:39:10.726 --> 00:39:23.728
+Participant 1: It's definitely just auto blocking it because it's marked as spam. Once we get your real numbers over, it won't do that. Gotcha. Especially since you guys filled everything out with the link with the white list stuff we sent you, right?
+
+321
+00:39:23.728 --> 00:39:28.168
+Participant 5: Meaning, we haven't done any of that yet. I didn't see that.
+
+322
+00:39:28.168 --> 00:39:35.530
+Participant 1: Oh oh let me send that over to you guys. I'm sorry. I thought we sent that to you. No, the the you mean the the white.
+
+323
+00:39:35.530 --> 00:39:37.927
+Participant 5: Isn't the worksheet? No, NO.
+
+324
+00:39:37.927 --> 00:39:44.069
+Participant 1: Nope, this is something entirely different that we, we were supposed to send you a white listing document. Alright, so.
+
+325
+00:39:44.069 --> 00:39:44.685
+Participant 5: Already.
+
+326
+00:39:44.685 --> 00:39:49.766
+Participant 1: I just posted in the chat, so if you click the three dots in the chat where it says more panels.
+
+327
+00:39:49.766 --> 00:39:53.348
+Participant 5: Neither of us are in front of it. Neither of us are in front of a computer right now.
+
+328
+00:39:53.348 --> 00:40:22.400
+Participant 1: Oh, ok. I can email it to you. Sorry about that. It's ok. Yep. Let me find our email. I'm gonna just email it to Participant 5 because he's right up there at the top of my inbox. Amazing the files, inserts. Yeah, this is normally what we'll send you if your number ever pops up a spam or you.
+
+329
+00:40:22.400 --> 00:40:46.340
+Participant 1: Need to register your numbers so they most likely don't pop up a spam. Sometimes they can pop up a spam. It just means that somebody marked it as spam when you got the call or when they got the call because they didn't recognize the number I don't know why people do it, but they do. Even if it's a legitimate number that they've most likely had dealings with in the past. I've had my own number marked as Sam and I had to do this myself.
+
+330
+00:40:46.340 --> 00:40:54.605
+Participant 1: For work, of course, of course. And like I've I never call anybody I don't know on my work number.
+
+331
+00:40:54.605 --> 00:40:56.748
+Participant 5: Why would you?
+
+332
+00:40:56.748 --> 00:41:11.043
+Participant 1: Yeah. I just sent that over to you. All right.
+
+333
+00:41:11.043 --> 00:41:22.186
+Participant 5: Okay, I brought my computer over so I'll let you know when we get it. Awesome.
+
+334
+00:41:22.186 --> 00:41:45.985
+Participant 1: I'm glad we got the one point up and you guys know what the process is basically right now. That's a good thing, and this meeting is recorded, so what we discussed today, I'll make sure these are sent back over to you the recordings in case we need it for the future. Awesome. These are Participant 3's meetings so I don't get them directly. I'll make sure I message him right now actually for when the meeting's over. Gotcha.
+
+335
+00:41:45.985 --> 00:41:51.488
+Participant 5: Alright, so we'll forward that to me. So take a look at it.
+
+336
+00:41:51.488 --> 00:42:09.540
+Participant 1: Yeah, so you don't have to do all this really technically un unless you're having issues. I do recommend, you know, if you know all the numbers that are of the issue, if you have the issue, just put those ones in and like Participant 3 was saying the other day.
+
+337
+00:42:09.540 --> 00:42:32.684
+Participant 1: When you go to these websites, well, I I don't actually don't remember if we went over this, but if we didn't, when you go to these websites, the carrier you're going to be saying is yours is veracity or 1st digital. It doesn't matter which one you put, they'll know, because technically we are not the PSTN, Veracity 1st digitals that PSTN or number holder carrier person.
+
+338
+00:42:32.684 --> 00:42:38.027
+Participant 5: But 1st digital is not on this list.
+
+339
+00:42:38.027 --> 00:43:10.450
+Participant 1: No, so when you're submitting, if it asks you what your carrier is, that's what I mean. Yeah, so you don't yeah so the like AT and T verizon, T Mobile ones and the higher one, it might ask you your carrier, that's when you would say it's veracity or 1st digital. I like to do 1st digital/veracity on my computer. If anybody ever, when I, when I do mine, because my number, like I said, my number occasionally pops up a spam cause somebody marks it as spam. Sometimes.
+
+340
+00:43:10.450 --> 00:43:11.893
+Participant 5: What much to do with this?
+
+341
+00:43:11.893 --> 00:43:41.404
+Participant 1: But I would say keep an eye if you yeah if you know who the carrier is that's causing the issue, specifically go to that carrier 1st with and just follow what the steps in the link, it's not too bad. It's very easy on this, I promise. If your numbers pop up a spam, this is what you want to do is just follow the carrier interpretation management portal directions when you click on those links. Other than that guys, did you guys want to try another phone?
+
+342
+00:43:41.404 --> 00:43:44.425
+Participant 5: This is fine.
+
+343
+00:43:44.425 --> 00:43:49.113
+Participant 1: Okay, I yeah, I just want to send you that we got through this.
+
+344
+00:43:49.113 --> 00:44:05.644
+Participant 5: No, I am expected. Yeah, I'm glad that the phone worked without needing to buy new phones. I, I just want to get the ports underway given all the pressure that they're trying to I completely agree.
+
+345
+00:44:05.644 --> 00:44:09.327
+Participant 1: I completely agree with you there. They were submitted, so.
+
+346
+00:44:09.327 --> 00:44:12.502
+Participant 5: Yeah. And I just resubmitted with NO.
+
+347
+00:44:12.502 --> 00:44:34.204
+Participant 1: I didn't resubmit, I updated the LOA document that you guys sent over and sent it over to our carrier to their translations team. So it goes directly to the people that actually do the porting for us on their end. So once that's all through, all I need to do is add the numbers, assign the numbers, and then you guys will be basically all ready to go once the port actually goes through.
+
+348
+00:44:34.204 --> 00:44:56.760
+Participant 5: See the new one that you sent, I just want to confirm. Can I remember Omar is on this new one co customer contact is me. Oh yeah. Omar was on there for billing originally. He's, he's still on there, but now he's the signer also. Yep.
+
+349
+00:44:56.760 --> 00:45:13.286
+Participant 5: So when we're looking at the numbers, right, we're at [redacted number], so the DID list is what you guys are using for the port or is it the other document that we sent?
+
+350
+00:45:13.286 --> 00:45:22.148
+Participant 1: So the LOA and the DID lists are what we're using for the port because they look at the LOA for that main number to be like, what's the account main number? Right.
+
+351
+00:45:22.148 --> 00:45:27.522
+Participant 5: That's correct. And Omar has signed it and then the DID list.
+
+352
+00:45:27.522 --> 00:45:34.345
+Participant 1: The DID list is just those all the other numbers where it says C attached list. That tells us which numbers you're actually porting.
+
+353
+00:45:34.345 --> 00:45:37.250
+Participant 5: Which was probably the same as this.
+
+354
+00:45:37.250 --> 00:45:43.463
+Participant 1: Yeah, so is you guys sent over I think [redacted number] numbers if I remember correctly?
+
+355
+00:45:43.463 --> 00:45:50.506
+Participant 5: Yeah. Well, we'll go up to that. All right. [redacted number], yeah. [redacted number] is correct. [redacted number].
+
+356
+00:45:50.506 --> 00:45:57.187
+Participant 1: Okay, yeah, I was gonna say I, I think you guys are counting an extra square there. That's good.
+
+357
+00:45:57.187 --> 00:46:09.608
+Participant 5: [redacted number] numbers and then the and then the rest are cancels. I mean Do you guys do the canceling for us also?
+
+358
+00:46:09.608 --> 00:46:17.505
+Participant 1: No, that is something you guys have to do on your end unfortunately. I'm not allowed to do any permissions on.
+
+359
+00:46:17.505 --> 00:46:22.786
+Participant 5: It'll happen when we kill our contract with spectrum.
+
+360
+00:46:22.786 --> 00:46:32.484
+Participant 1: Yep exactly, yeah. I don't have any control of being able to cancel it for you just cause that we're not allowed to really talk to your current carrier and then.
+
+361
+00:46:32.484 --> 00:46:38.446
+Participant 5: The reason why there were only some of the numbers.
+
+362
+00:46:38.446 --> 00:46:40.266
+Participant 1: Tom.
+
+363
+00:46:40.266 --> 00:47:10.348
+Participant 5: In other words like Participant 3 sent one email, there are five numbers that have been approved and then the original email that he sent had, you know, or what we sent, what we received from RingCentral, there were like [redacted number] numbers. So if we're doing [redacted number] minus like [redacted number] plus, so it's like, we just want to make sure that all those [redacted number] reported. So we'll just.
+
+364
+00:47:10.348 --> 00:47:27.371
+Participant 1: Yeah, I was gonna say I got like about [redacted number] something emails while I was on lunch. I my phone was blown up and I was like all your numbers were like, hey, wrong sign or hey wrong sign or hey wrong sign. So, yeah. So once it goes through, you'll probably get another notification.
+
+365
+00:47:27.371 --> 00:47:29.042
+Participant 5: Great numbers.
+
+366
+00:47:29.042 --> 00:47:37.405
+Participant 1: We'll get notifications as well. I'll keep up to date on that. Participant 3 will as well. If you guys want any updates during the process, don't hesitate to reach out.
+
+367
+00:47:37.405 --> 00:47:41.985
+Participant 5: Or just if you get a good update, you know, let us know also if I can.
+
+368
+00:47:41.985 --> 00:47:43.906
+Participant 1: We'll do tomorrow.
+
+369
+00:47:43.906 --> 00:47:50.925
+Participant 5: So this phone right now, it can't, it cannot dial out. Is that correct?
+
+370
+00:47:50.925 --> 00:47:58.284
+Participant 1: You can dial out. It cannot receive calls in unless you want me to assign the number to you and then it'll just ring you.
+
+371
+00:47:58.284 --> 00:48:03.887
+Participant 5: It cannot receive calls in. All right, well, I can, I can.
+
+372
+00:48:03.887 --> 00:48:14.742
+Participant 1: Yeah, I was gonna say I can set it so it can. It's just NO numbers assigned to anybody right now, it's set as the main number so it can do outbound calling. Like I have to actually assign it to somebody to purchase.
+
+373
+00:48:14.742 --> 00:48:20.647
+Participant 5: Do Let's get this port process going and then we'll see about assigning it.
+
+374
+00:48:20.647 --> 00:48:25.648
+Participant 1: Awesome. All right. All right, thanks for your help. Yeah, NO problem. Any other questions or anything I can do for you.
+
+375
+00:48:25.648 --> 00:48:36.688
+Participant 5: Nope. Appreciate it. Yeah we'll get the copy of all this info so that we can try to grab the process and it'll go faster for each phone.
+
+376
+00:48:36.688 --> 00:48:51.527
+Participant 1: Awesome. Yeah. You guys call flow is pretty simple too cause it's just the receptionist and she just forwards her phone to a number when she's on lunch, right? Just so I remember. Yeah. Okay. Yeah, then everybody else has direct dial, so that's eas.
+
+377
+00:48:51.527 --> 00:48:57.170
+Participant 5: Okay, we'll be in touch. Thank you. Oh, actually I had one more question. I'm so sorry. That's ok. So you.
+
+378
+00:48:57.170 --> 00:49:18.187
+Participant 1: You guys gave me documents yesterday, the user spreadsheet with updated red lines. I just wanted to confirm there was [redacted number] users that their names are in red, but the whole line is not red. Do you still want me to add those ones or is there something special that they were made red like text?
+
+379
+00:49:18.187 --> 00:49:20.587
+Participant 5: Is this on the DID list? No.
+
+380
+00:49:20.587 --> 00:49:27.887
+Participant 1: Let me share my screen real quick. Just so you can see it's on the user spreadsheet. Okay, let me check.
+
+381
+00:49:27.887 --> 00:49:35.464
+Participant 5: I'll use the spreadsheet quick Webex user. So what was the color coding here?
+
+382
+00:49:35.464 --> 00:49:57.089
+Participant 1: So the green is what I added. I didn't do the phone number yet because we don't want to add those right away, but these people in with the red labeling, the text, not the Not the red highlight, but the red text right here. These are red texts. Are those ones supposed to be highlighted right now? Hold on.
+
+383
+00:49:57.089 --> 00:50:00.463
+Participant 5: No, those are fine. No, those are fine.
+
+384
+00:50:00.463 --> 00:50:02.568
+Participant 1: Okay, so add these in.
+
+385
+00:50:02.568 --> 00:50:06.926
+Participant 5: That need to be deleted are the ones that I highlighted the rows in red.
+
+386
+00:50:06.926 --> 00:50:11.104
+Participant 1: Okay, awesome, yeah. Then that's I didn't even have those ones in. I just want to make.
+
+387
+00:50:11.104 --> 00:50:14.985
+Participant 5: Sure yeah keeping the numbers just not the users.
+
+388
+00:50:14.985 --> 00:50:28.268
+Participant 1: Gotcha, ok. That's perfectly fine. Alright, well then I have nothing else for you guys. You guys have a wonderful rest of your day. If I don't talk to you, the rest of today, you know, hopefully I have an update for you tomorrow or.
+
+389
+00:50:28.268 --> 00:50:33.229
+Participant 5: Yeah early next week. Great. I really appreciate your Friday.
+
+390
+00:50:33.229 --> 00:50:43.008
+Participant 1: Yes. Yeah exactly hopefully Friday. At the latest, but you guys have a great rest of your day and I will talk to you soon, ok? Bye. Bye.

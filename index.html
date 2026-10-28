@@ -1554,12 +1554,31 @@
             <li><strong>Configure the provisioning security option required for this firmware.</strong> In the recording, the guided path was <strong>Administrative Settings → TLS Security → TLS Applications → Provisioning → TLS Protocol</strong>, and the team selected <strong>SSL v2/v3</strong>. <strong>Security warning:</strong> SSLv2/v3 are obsolete and insecure; this is a record of the pilot, <em>not</em> a general configuration recommendation. Verify current vendor-approved TLS settings before implementing this on production devices.</li>
             <li><strong>Set the provisioning boot source.</strong> Go back to <strong>Administrative Settings → Network Configuration → Provisioning Server → DHCP → Boot Server</strong>, then choose <strong>Static</strong> as demonstrated.</li>
             <li><strong>Set the provisioning server type.</strong> In <strong>Provisioning Server</strong>, set <strong>Server Type → HTTPS</strong>.</li>
-            <li><strong>Enter the approved provisioning address.</strong> In <strong>Provisioning Server → Server Address</strong>, enter the full, exact vendor-approved HTTPS address for the phone model and migration path. The recording emphasized exact capitalization and forward slashes. <strong>Do not guess the endpoint:</strong> the spoken transcript does not establish a reliably transcribable complete URL; obtain it from the current Cisco/Webex Poly migration guide or approved provisioning worksheet.</li>
+            <li><strong>Enter the provisioning address.</strong> In <strong>Provisioning Server → Server Address</strong>, enter <code>https://plcm.sipflash.com</code> exactly, using lowercase letters and forward slashes. This is the corrected address for this migration. Use the keypad reference below to enter the hostname; verify the complete address on screen before saving.</li>
             <li><strong>Save configuration and reboot.</strong> Press <strong>OK</strong> to save the server address. Navigate back to the <strong>Save Config</strong> confirmation, then choose <strong>Yes</strong> to initiate reboot. Do not interrupt firmware downloads. The pilot went through multiple reboots and displayed messages including <em>Provisioning Successful</em> and <em>Downloading New Application</em>.</li>
             <li><strong>Confirm Webex registration.</strong> In the target Webex administration view, confirm that the assigned MAC address/device appears online or registered, and that it has an IP address and the expected user/extension. A transient <em>Line Unregistered</em> or <em>Service Unavailable</em> message may appear during setup; allow provisioning to complete and troubleshoot if it persists.</li>
             <li><strong>Run test calls.</strong> Have the engineer provide a temporary outbound test number if production numbers have not yet ported. Place a call to at least one known reachable external number. In this pilot, a call to one cell went directly to voicemail because the test caller ID was marked as spam, while a second external call connected. Distinguish caller-ID blocking from a registration failure. Test inbound calling only after a DID is assigned and routed to the destination.</li>
             <li><strong>Record completion and repeat per device.</strong> Record the phone model, MAC address, intended user, provisioning result, online state, test call outcome, and unresolved issues. Repeat the hands-on provisioning process for each remaining phone; the pilot team noted the phones needed to be handled individually. Reconcile user and DID spreadsheets before production cutover.</li>
           </ol>
+        </article>
+        <article class="article-card" data-keywords="Poly keypad multi-tap plcm sipflash provisioning server address HTTPS">
+          <h3>Poly provisioning address and keypad reference</h3>
+          <p><strong>Server address:</strong> <code>https://plcm.sipflash.com</code></p>
+          <p>Open <strong>Settings → Advanced → Administrative Settings → Network Configuration → Provisioning Server</strong>. Set <strong>DHCP → Boot Server → Static</strong> and <strong>Server Type → HTTPS</strong>, then edit <strong>Server Address</strong>.</p>
+          <p>Use lowercase text-entry mode. Enter the <code>https://</code> prefix using the phone's punctuation selector, with two forward slashes. Then use these multi-tap sequences from our migration notes. Each space separates a character; press repeated digits quickly to cycle to that letter, then pause or advance before the next character.</p>
+          <div class="migration-table-wrap">
+            <table class="migration-keypad">
+              <caption>Hostname entry after https://</caption>
+              <thead><tr><th scope="col">Text</th><th scope="col">Keypad sequence</th></tr></thead>
+              <tbody>
+                <tr><td><code>plcm</code></td><td><code>7 555 222 6</code></td></tr>
+                <tr><td><code>.sipflash</code></td><td><code>* 7777 444 7 333 555 2 7777 44</code></td></tr>
+                <tr><td><code>.com</code></td><td><code>* 222 666 6</code></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>The <code>*</code> entries represent the period in the text-entry mode used in the pilot. Confirm each character on screen because punctuation selection can vary by model and input mode. These three rows form one address in one field.</p>
+          <p>Press <strong>OK</strong>, go <strong>back/left twice</strong> to <strong>Save Config</strong>, then press the <strong>Yes</strong> soft key to reboot. Allow all firmware downloads and reboots to finish, then confirm <em>Provisioning Successful</em> and Webex registration.</p>
         </article>
         <article class="article-card" data-keywords="migration checklist validation porting users devices line registration">
           <h3>Migration sign-off checklist</h3>
@@ -1585,6 +1604,407 @@
             <li><strong>Calls go straight to recipient voicemail:</strong> Test another destination and check whether the temporary caller ID is being blocked or tagged spam; do not immediately assume phone provisioning failed.</li>
           </ul>
           <p><strong>Source:</strong> Rudd Mgmt. Test Migration meeting recording and caption transcript, October 28, 2026 (approximately 51 minutes). This documents a pilot, not verified instructions for every Poly model or a complete production cutover plan.</p>
+        </article>
+        <article class="article-card" data-keywords="Rudd Management meeting recording video captions transcript October 28 2026">
+          <h3>Rudd Management test migration: meeting transcript</h3>
+          <p>October 28, 2026 · Full pilot meeting · Approximately 51 minutes. The meeting transcript is reproduced below with credentials, personal numbers, and participant identifiers redacted; automatic captions can contain transcription errors. Use the corrected provisioning address and keypad reference above for the procedure.</p>
+          <p>The recording will be added in a future update. The full meeting transcript is available below.</p>
+          <p><a class="inline-download" href="media/rudd-management-transcript.vtt" download>Download redacted transcript (VTT)</a></p>
+          <details class="migration-transcript">
+            <summary>Read the full meeting transcript</summary>
+            <ol class="migration-transcript-cues">
+              <li><time>00:00:38</time> <strong>Participant 1:</strong> I already resubmitted the, SOW. Yeah, so that or workbook, whatever you want to call it. I don&#x27;t know if I CC you or not.</li>
+              <li><time>00:00:49</time> <strong>Participant 2:</strong> Hello. Thank you.</li>
+              <li><time>00:00:52</time> <strong>Participant 3:</strong> Hello hello. Hey.</li>
+              <li><time>00:00:56</time> <strong>Participant 2:</strong> Do you, you tell me where I&#x27;m with Participant 5. Participant 2&#x27;s gonna join. He&#x27;s going to a meeting, but you tell me where I need to be with this phone. I&#x27;ll show you. So we have a former employee whose phone is still assigned, so we can take it offline and do whatever we want with it, it&#x27;s not, it&#x27;s not active, so.</li>
+              <li><time>00:01:15</time> <strong>Participant 1:</strong> Just to confirm, it&#x27;s the Mac address that Participant 5 sent just a minute.</li>
+              <li><time>00:01:18</time> <strong>Participant 2:</strong> Yes, that&#x27;s correct. Okay.</li>
+              <li><time>00:01:21</time> <strong>Participant 1:</strong> Who are we going to assign this device to?</li>
+              <li><time>00:01:25</time> <strong>Participant 2:</strong> Good call.</li>
+              <li><time>00:01:30</time> <strong>Participant 1:</strong> I mean I know it&#x27;s just for testing I can assign it to literally anybody.</li>
+              <li><time>00:01:33</time> <strong>Participant 2:</strong> It&#x27;s assign it to Participant 5.</li>
+              <li><time>00:01:35</time> <strong>Participant 1:</strong> There, ok. I&#x27;m just prepping my side. All I do is literally enter in the MAC address. Most of the heavy lifting here is gonna be you guys.</li>
+              <li><time>00:01:42</time> <strong>Participant 2:</strong> Yeah, so this is this is the phone. Gotcha. Okay. It says faith Brenner. Yep.</li>
+              <li><time>00:01:50</time> <strong>Participant 1:</strong> Alright, so we need to remove it from the RingCentral portal 1st so it deregisters because otherwise it&#x27;s just gonna come right back up to RingCentral.</li>
+              <li><time>00:02:01</time> <strong>Participant 2:</strong> So what do I have to do? Log in as a super admin?</li>
+              <li><time>00:02:04</time> <strong>Participant 1:</strong> Yep and just delete it out of there. Alright.</li>
+              <li><time>00:02:07</time> <strong>Participant 2:</strong> I gotta I gotta get your I don&#x27;t know. It&#x27;s not on my laptop, it&#x27;s on my deskto.</li>
+              <li><time>00:02:11</time> <strong>Participant 4:</strong> Hey everybody. Hello, call. Do you want to fall into the meeting on yourself? Yeah Participant 3, by the way, in the meantime, I assume we resolved their issue. I Participant 5 resent you that spreadsheet.</li>
+              <li><time>00:02:24</time> <strong>Participant 2:</strong> It doesn&#x27;t matter. Do you have an answer as to why.</li>
+              <li><time>00:02:27</time> <strong>Participant 4:</strong> I think only named portion of the numbers we actually want to migrate or.</li>
+              <li><time>00:02:33</time> <strong>Participant 3:</strong> That was only the ones that were rejected quote unquote, and you know we see we have the entire list, the ones that we&#x27;ve submitted for are the entire list that you provided, and I as as I said in my email, we got, we actually got approval for some of the numbers, so that makes sense of why you&#x27;re not seeing the full list that we already have some that approved for the 11th.</li>
+              <li><time>00:02:54</time> <strong>Participant 4:</strong> Really? Yes. Okay. Yep. So the whole discussion we had earlier today is likely moved, right?</li>
+              <li><time>00:03:00</time> <strong>Participant 3:</strong> Correct, yeah, we should be able to get I&#x27;m very confident that we&#x27;ll be able to get the rest of them approved for that same day. We&#x27;ve already got that, the, the new LOA that you guys sent over with Omar&#x27;s name on it. We already got that submitted, so that&#x27;s already in process and I&#x27;m sure we&#x27;ll see an update on that in the next day or so.</li>
+              <li><time>00:03:16</time> <strong>Participant 4:</strong> All right, this is great news. Thank you so much for that. So I guess let&#x27;s let&#x27;s proceed with your efforts soon as you guys are ready. I think we have all the information. Participant 5, I sent you a screenshot of the back address for that phone.</li>
+              <li><time>00:03:33</time> <strong>Participant 3:</strong> Yep, we have that. He Participant 2&#x27;s going into the RingCentral portal right now just to delete that device. So when we reboot it, it doesn&#x27;t automatically. So.</li>
+              <li><time>00:03:46</time> <strong>Participant 2:</strong> I just go to, what should I do here?</li>
+              <li><time>00:03:52</time> <strong>Participant 2:</strong> Remove remove line?</li>
+              <li><time>00:03:54</time> <strong>Participant 1:</strong> Let me see what you&#x27;re looking at cause it should, I would assume it&#x27;s in the devices page Make you bigger, give me one.</li>
+              <li><time>00:04:08</time> <strong>Participant 4:</strong> I hate to sound like a tech, but if if you&#x27;re putting in brand new software into that, there&#x27;s NO chance it would even look for I just wouldn&#x27;t communicate with the phone anymore. It&#x27;ll be like you unplugged the phone.</li>
+              <li><time>00:04:23</time> <strong>Participant 3:</strong> Right, so it&#x27;s since there&#x27;s a couple of steps to be done to upgrade the firmware, we&#x27;re gonna want because and we need to point it initially to Cisco&#x27;s service servers to grab that firmware. We we just we need to remove it from RingCentral 1st. That way it&#x27;s not going to like I said reach out and grab it. I&#x27;m gonna meet you Participant 2. So it&#x27;s not gonna reach out and grab it automatically cause it will in the 1st reboot, it&#x27;s gonna want to go back to where it&#x27;s configured, so we just wanna.</li>
+              <li><time>00:04:53</time> <strong>Participant 3:</strong> Do it from there so we don&#x27;t have to, you know, run into that. Alright perfect. We can see your screen now.</li>
+              <li><time>00:05:07</time> <strong>Participant 1:</strong> Get my error gone.</li>
+              <li><time>00:05:11</time> <strong>Participant 2:</strong> Alright, so under phone system, I assume it will be here.</li>
+              <li><time>00:05:18</time> <strong>Participant 3:</strong> Yep, phones and devices Yep. All right.</li>
+              <li><time>00:05:22</time> <strong>Participant 2:</strong> And then I go into.</li>
+              <li><time>00:05:26</time> <strong>Participant 3:</strong> We don&#x27;t want, we&#x27;re not company info, you come back out of there, go back to.</li>
+              <li><time>00:05:30</time> <strong>Participant 2:</strong> All numbers?</li>
+              <li><time>00:05:31</time> <strong>Participant 3:</strong> No, it won&#x27;t be anything to do with like the phone number or the user. It&#x27;s gonna, we need to remove the device itself.</li>
+              <li><time>00:05:36</time> <strong>Participant 2:</strong> If user.</li>
+              <li><time>00:05:37</time> <strong>Participant 3:</strong> Yep, exactly.</li>
+              <li><time>00:05:41</time> <strong>Participant 2:</strong> Okay? Right, so I can click here, it just says change phone reassigned to.</li>
+              <li><time>00:05:47</time> <strong>Participant 3:</strong> It seem to change yeah click in, right?</li>
+              <li><time>00:05:51</time> <strong>Participant 2:</strong> I can remove line. That&#x27;s what I wanna do, right?</li>
+              <li><time>00:05:55</time> <strong>Participant 3:</strong> You could do that.</li>
+              <li><time>00:05:57</time> <strong>Participant 1:</strong> He might remove her number.</li>
+              <li><time>00:05:59</time> <strong>Participant 2:</strong> Right. I don&#x27;t want to.</li>
+              <li><time>00:06:01</time> <strong>Participant 1:</strong> Yeah, is it gonna remove the phone with it or is it just going to remove the number off of her user is my question? That&#x27;s what I&#x27;m concerned about. Yeah, it&#x27;s just gonna remove the number. Give me [redacted number] s. Give me [redacted number] s.</li>
+              <li><time>00:06:12</time> <strong>Participant 5:</strong> Button?</li>
+              <li><time>00:06:15</time> <strong>Participant 3:</strong> Yeah, it&#x27;s if you were to hit the change phone and let&#x27;s see what that does. Yes.</li>
+              <li><time>00:06:24</time> <strong>Participant 4:</strong> Let&#x27;s be clear by the way, we don&#x27;t, we&#x27;re not gonna ever bring this phone back to RingCentral.</li>
+              <li><time>00:06:30</time> <strong>Participant 2:</strong> So we&#x27;re ok with that.</li>
+              <li><time>00:06:33</time> <strong>Participant 5:</strong> Yeah, except they just don&#x27;t want that lot, that number that I think we wanted to keep as a212 number, they&#x27;re trying not to lose that.</li>
+              <li><time>00:06:39</time> <strong>Participant 3:</strong> Well, I don&#x27;t think it&#x27;s so you can assign that number.</li>
+              <li><time>00:06:42</time> <strong>Participant 4:</strong> I&#x27;m not worried.</li>
+              <li><time>00:06:43</time> <strong>Participant 3:</strong> Yeah, yeah. Control over it. Spectrum. It&#x27;s it&#x27;s your spectrum account.</li>
+              <li><time>00:06:47</time> <strong>Participant 5:</strong> So it&#x27;s even unassign the number it&#x27;s not gonna change anything really.</li>
+              <li><time>00:06:50</time> <strong>Participant 3:</strong> It&#x27;s gonna Yeah so you can just hit ok when I would just change phone and hit ok, see what it does. It&#x27;s interesting that it&#x27;s making you replace it. Let me see. You should just have an option to remove it.</li>
+              <li><time>00:07:12</time> <strong>Participant 2:</strong> Can we just replace it with the RingCentral app and that there then that way there&#x27;s NO physical hardware.</li>
+              <li><time>00:07:17</time> <strong>Participant 3:</strong> Yeah, that that would work. That that should work. Yeah let&#x27;s try that out. Yeah, that&#x27;s next. That&#x27;s fine.</li>
+              <li><time>00:07:33</time> <strong>Participant 3:</strong> Yeah, but it&#x27;s gonna re it&#x27;s gonna reboot since it was just removed.</li>
+              <li><time>00:07:38</time> <strong>Participant 1:</strong> Yep, there&#x27;s it&#x27;s the unassigned phone where you see that. Oh ok yep now we should be able to hopefully.</li>
+              <li><time>00:07:44</time> <strong>Participant 2:</strong> Should I rename this as Cisco test phone?</li>
+              <li><time>00:07:49</time> <strong>Participant 1:</strong> We yeah, I guess. I mean we&#x27;re gonna try and get rid of it out of here completely. There should be phones and devices in an unassigned tab.</li>
+              <li><time>00:07:59</time> <strong>Participant 3:</strong> There it is unassigned. Yeah. Yep, so then just check the box there on the left side and then you can just and then delete it.</li>
+              <li><time>00:08:08</time> <strong>Participant 2:</strong> Delete it? Yep. Yep.</li>
+              <li><time>00:08:15</time> <strong>Participant 1:</strong> That should have deregistered the phone now.</li>
+              <li><time>00:08:18</time> <strong>Participant 5:</strong> There&#x27;s smoke coming out of it. Sure.</li>
+              <li><time>00:08:22</time> <strong>Participant 2:</strong> I&#x27;m looking for the other Participant 2, just.</li>
+              <li><time>00:08:26</time> <strong>Participant 2:</strong> Yeah. Sure. Dean, I&#x27;m doing alright I&#x27;m actually on a Zoom call right now, but since you called I I dropped out of the meeting. What&#x27;s up?</li>
+              <li><time>00:08:45</time> <strong>Participant 5:</strong> Participant 2 you should mute yourself.</li>
+              <li><time>00:08:47</time> <strong>Participant 3:</strong> Yeah, I can I can mute him. I can mute him. Ok, Participant 5 I guess we should be good to start with the steps on the device on the actual physical device now. Alright.</li>
+              <li><time>00:08:56</time> <strong>Participant 5:</strong> But importantly, out of all of us, who&#x27;s eaten lunch so far today?</li>
+              <li><time>00:09:01</time> <strong>Participant 3:</strong> I I just, I was eating much earlier when, when I was talking to Participant 2 on the phone.</li>
+              <li><time>00:09:05</time> <strong>Participant 5:</strong> Yeah, I I haven&#x27;t, but I&#x27;m not gonna be crying.</li>
+              <li><time>00:09:07</time> <strong>Participant 3:</strong> Okay, I was gonna say alright it&#x27;d be be nice I get angry, so that&#x27;s why I gotta make sure I&#x27;m fed, otherwise I get a little short.</li>
+              <li><time>00:09:14</time> <strong>Participant 5:</strong> What a bunch of many.</li>
+              <li><time>00:09:19</time> <strong>Participant 5:</strong> What words did Jesus use? Did you just say nine?</li>
+              <li><time>00:09:22</time> <strong>Participant 3:</strong> Many.</li>
+              <li><time>00:09:23</time> <strong>Participant 4:</strong> Okay, I don&#x27;t know Participant 3 well enough to call on something in it.</li>
+              <li><time>00:09:25</time> <strong>Participant 5:</strong> Eric.</li>
+              <li><time>00:09:26</time> <strong>Participant 3:</strong> That&#x27;s alright. I got thick skin. I got thick skin Participant 2.</li>
+              <li><time>00:09:30</time> <strong>Participant 1:</strong> Correct. All right, so in successful. Yeah, we want to restart the phone one more time and then we&#x27;re going to while it&#x27;s rebooting hit the cancel button, sorry, I needed to make sure that it was coming back up before we do anything so when you yeah we&#x27;re gonna reboot the phone.</li>
+              <li><time>00:09:51</time> <strong>Participant 5:</strong> You&#x27;re.</li>
+              <li><time>00:09:53</time> <strong>Participant 1:</strong> This is all going to be you. The only thing I&#x27;m doing is adding the Mac address. This is the worst part I promise, is you doing what you&#x27;re about to do. Yeah, you can unplug it. It shouldn&#x27;t be I mean it might be loading, but that should be fine. We&#x27;re gonna factory reset it anyway. I&#x27;m gonna unplug it for a second. Yeah unplug it and then when you see the start screen hit the cancel button, and then you&#x27;re gonna do when it shows the countdown.</li>
+              <li><time>00:10:19</time> <strong>Participant 1:</strong> Let me let me sorry that&#x27;s ok. I&#x27;m plugging it.</li>
+              <li><time>00:10:24</time> <strong>Participant 5:</strong> Back in, let me get the power there.</li>
+              <li><time>00:10:29</time> <strong>Participant 1:</strong> Then while it&#x27;s rebooting, there should be a cancel button on they hit that. And then when it shows the countdown hold one, three, and five.</li>
+              <li><time>00:10:39</time> <strong>Participant 5:</strong> I just see the screen.</li>
+              <li><time>00:10:42</time> <strong>Participant 1:</strong> Let me know when you see cancel. There should be a cancel button on there and press that.</li>
+              <li><time>00:10:53</time> <strong>Participant 5:</strong> Blank screen.</li>
+              <li><time>00:10:55</time> <strong>Participant 1:</strong> Participant 2 we can see your.</li>
+              <li><time>00:10:58</time> <strong>Participant 3:</strong> Screen still just a heads up.</li>
+              <li><time>00:11:15</time> <strong>Participant 3:</strong> I don&#x27;t think there&#x27;s a way for me to shut his screen off.</li>
+              <li><time>00:11:20</time> <strong>Participant 5:</strong> I can just show.</li>
+              <li><time>00:11:21</time> <strong>Participant 1:</strong> On my screen to.</li>
+              <li><time>00:11:22</time> <strong>Participant 3:</strong> Fix that? Yeah. Yep. Is there anything that you see on it? He&#x27;s talking to.</li>
+              <li><time>00:11:26</time> <strong>Participant 1:</strong> Okay. Participant 2. What&#x27;s he talking on Dean for? Dean should be talking on me.</li>
+              <li><time>00:11:30</time> <strong>Participant 3:</strong> Yeah, I&#x27;ll I&#x27;ll share my screen then. We&#x27;ll just.</li>
+              <li><time>00:11:34</time> <strong>Participant 5:</strong> I still have a blank screen, guys.</li>
+              <li><time>00:11:39</time> <strong>Participant 3:</strong> There we go.</li>
+              <li><time>00:11:41</time> <strong>Participant 1:</strong> I was sharing my screen to pull the instructions for these guys.</li>
+              <li><time>00:11:45</time> <strong>Participant 3:</strong> Oh yep go ahead here again.</li>
+              <li><time>00:11:51</time> <strong>Participant 1:</strong> That way you can see the instructions as I&#x27;m looking at them in case one you said? No, I just have a blank screen, nothing. Blank screen.</li>
+              <li><time>00:12:05</time> <strong>Participant 5:</strong> No power nor nothing.</li>
+              <li><time>00:12:09</time> <strong>Participant 1:</strong> Can we reboot it one more time? Just unplug the whole thing or Yeah, that&#x27;s weird that it&#x27;s just in a blank screen.</li>
+              <li><time>00:12:16</time> <strong>Participant 2:</strong> Thank you, thank you for muting me. I forgot to mute myself.</li>
+              <li><time>00:12:19</time> <strong>Participant 3:</strong> That was, that was Dean.</li>
+              <li><time>00:12:22</time> <strong>Participant 4:</strong> What, what do you want from you?</li>
+              <li><time>00:12:24</time> <strong>Participant 2:</strong> You want to talk to you. All right.</li>
+              <li><time>00:12:27</time> <strong>Participant 4:</strong> So tell him to call me, he knows my number.</li>
+              <li><time>00:12:30</time> <strong>Participant 2:</strong> I he he was trying to call you that, but the.</li>
+              <li><time>00:12:33</time> <strong>Participant 4:</strong> No worries. Let let&#x27;.</li>
+              <li><time>00:12:34</time> <strong>Participant 2:</strong> No, NO, I just told him, I just told him DNS is forwarding you the letter from the the previous attorney to, to quash this guy and he said that&#x27;s all I need. Okay. And then he said Yafa&#x27;s not getting any emails regarding paid bills, so I said, well, I said, well, verify what email address that should be used and I&#x27;ll verify it&#x27;s correct in our system.</li>
+              <li><time>00:12:54</time> <strong>Participant 4:</strong> But in the meantime I sent him all the missing say bills that he wanted, so.</li>
+              <li><time>00:12:58</time> <strong>Participant 5:</strong> We guys, the same thing happened. The poly screen, the poly icon came up, and then it goes blank.</li>
+              <li><time>00:13:08</time> <strong>Participant 1:</strong> And there, let me see real quick. Give me [redacted number] s. Sure sorry one moment. Okay. That&#x27;s ok.</li>
+              <li><time>00:13:17</time> <strong>Participant 5:</strong> Oh, hold on. Okay, initialize initializing device.</li>
+              <li><time>00:13:22</time> <strong>Participant 4:</strong> Press cancel.</li>
+              <li><time>00:13:24</time> <strong>Participant 1:</strong> It press cancel. Yeah, it might be, it might show in a minute. It just takes a sec on these phones.</li>
+              <li><time>00:13:37</time> <strong>Participant 1:</strong> [Credential and access discussion redacted for publication.]</li>
+              <li><time>00:13:57</time> <strong>Participant 5:</strong> [Credential and access discussion redacted for publication.]</li>
+              <li><time>00:14:03</time> <strong>Participant 1:</strong> [Credential and access discussion redacted for publication.]</li>
+              <li><time>00:14:16</time> <strong>Participant 5:</strong> [Credential and access discussion redacted for publication.]</li>
+              <li><time>00:14:27</time> <strong>Participant 1:</strong> [Credential and access discussion redacted for publication.]</li>
+              <li><time>00:14:30</time> <strong>Participant 5:</strong> [Credential and access discussion redacted for publication.]</li>
+              <li><time>00:14:32</time> <strong>Participant 1:</strong> [Credential and access discussion redacted for publication.]</li>
+              <li><time>00:14:43</time> <strong>Participant 5:</strong> [Credential and access discussion redacted for publication.]</li>
+              <li><time>00:14:45</time> <strong>Participant 1:</strong> [Credential and access discussion redacted for publication.]</li>
+              <li><time>00:14:48</time> <strong>Participant 5:</strong> [Credential and access discussion redacted for publication.]</li>
+              <li><time>00:14:56</time> <strong>Participant 1:</strong> [Credential and access discussion redacted for publication.]</li>
+              <li><time>00:15:08</time> <strong>Participant 1:</strong> [Credential and access discussion redacted for publication.]</li>
+              <li><time>00:15:10</time> <strong>Participant 5:</strong> [Credential and access discussion redacted for publication.]</li>
+              <li><time>00:15:13</time> <strong>Participant 1:</strong> [Credential and access discussion redacted for publication.]</li>
+              <li><time>00:15:17</time> <strong>Participant 1:</strong> [Credential and access discussion redacted for publication.]</li>
+              <li><time>00:15:28</time> <strong>Participant 5:</strong> [Credential and access discussion redacted for publication.]</li>
+              <li><time>00:15:31</time> <strong>Participant 1:</strong> [Credential and access discussion redacted for publication.]</li>
+              <li><time>00:15:50</time> <strong>Participant 5:</strong> [Credential and access discussion redacted for publication.]</li>
+              <li><time>00:15:56</time> <strong>Participant 1:</strong> [Credential and access discussion redacted for publication.]</li>
+              <li><time>00:16:00</time> <strong>Participant 5:</strong> [Credential and access discussion redacted for publication.]</li>
+              <li><time>00:16:07</time> <strong>Participant 1:</strong> [Credential and access discussion redacted for publication.]</li>
+              <li><time>00:16:08</time> <strong>Participant 5:</strong> [Credential and access discussion redacted for publication.]</li>
+              <li><time>00:16:11</time> <strong>Participant 1:</strong> [Credential and access discussion redacted for publication.]</li>
+              <li><time>00:16:13</time> <strong>Participant 5:</strong> [Credential and access discussion redacted for publication.]</li>
+              <li><time>00:16:19</time> <strong>Participant 1:</strong> [Credential and access discussion redacted for publication.]</li>
+              <li><time>00:16:30</time> <strong>Participant 5:</strong> [Credential and access discussion redacted for publication.]</li>
+              <li><time>00:16:39</time> <strong>Participant 1:</strong> [Credential and access discussion redacted for publication.]</li>
+              <li><time>00:16:49</time> <strong>Participant 5:</strong> [Credential and access discussion redacted for publication.]</li>
+              <li><time>00:16:56</time> <strong>Participant 1:</strong> [Credential and access discussion redacted for publication.]</li>
+              <li><time>00:17:19</time> <strong>Participant 1:</strong> [Credential and access discussion redacted for publication.]</li>
+              <li><time>00:17:49</time> <strong>Participant 1:</strong> [Credential and access discussion redacted for publication.]</li>
+              <li><time>00:18:05</time> <strong>Participant 1:</strong> [Credential and access discussion redacted for publication.]</li>
+              <li><time>00:18:10</time> <strong>Participant 1:</strong> [Credential and access discussion redacted for publication.]</li>
+              <li><time>00:18:20</time> <strong>Participant 5:</strong> [Credential and access discussion redacted for publication.]</li>
+              <li><time>00:18:26</time> <strong>Participant 1:</strong> [Credential and access discussion redacted for publication.]</li>
+              <li><time>00:18:51</time> <strong>Participant 1:</strong> [Credential and access discussion redacted for publication.]</li>
+              <li><time>00:18:54</time> <strong>Participant 4:</strong> [Credential and access discussion redacted for publication.]</li>
+              <li><time>00:19:02</time> <strong>Participant 1:</strong> [Credential and access discussion redacted for publication.]</li>
+              <li><time>00:19:10</time> <strong>Participant 4:</strong> [Credential and access discussion redacted for publication.]</li>
+              <li><time>00:19:20</time> <strong>Participant 1:</strong> [Credential and access discussion redacted for publication.]</li>
+              <li><time>00:19:25</time> <strong>Participant 4:</strong> [Credential and access discussion redacted for publication.]</li>
+              <li><time>00:19:26</time> <strong>Participant 3:</strong> [Credential and access discussion redacted for publication.]</li>
+              <li><time>00:19:34</time> <strong>Participant 5:</strong> [Credential and access discussion redacted for publication.]</li>
+              <li><time>00:19:43</time> <strong>Participant 4:</strong> [Credential and access discussion redacted for publication.]</li>
+              <li><time>00:19:47</time> <strong>Participant 3:</strong> [Credential and access discussion redacted for publication.]</li>
+              <li><time>00:19:51</time> <strong>Participant 5:</strong> [Credential and access discussion redacted for publication.]</li>
+              <li><time>00:19:57</time> <strong>Participant 1:</strong> [Credential and access discussion redacted for publication.]</li>
+              <li><time>00:19:59</time> <strong>Participant 3:</strong> [Credential and access discussion redacted for publication.]</li>
+              <li><time>00:20:04</time> <strong>Participant 1:</strong> [Credential and access discussion redacted for publication.]</li>
+              <li><time>00:20:09</time> <strong>Participant 5:</strong> [Credential and access discussion redacted for publication.]</li>
+              <li><time>00:20:18</time> <strong>Participant 1:</strong> [Credential and access discussion redacted for publication.]</li>
+              <li><time>00:20:47</time> <strong>Participant 3:</strong> [Credential and access discussion redacted for publication.]</li>
+              <li><time>00:20:47</time> <strong>Participant 5:</strong> [Credential and access discussion redacted for publication.]</li>
+              <li><time>00:20:48</time> <strong>Participant 1:</strong> [Credential and access discussion redacted for publication.]</li>
+              <li><time>00:20:57</time> <strong>Participant 5:</strong> [Credential and access discussion redacted for publication.]</li>
+              <li><time>00:21:03</time> <strong>Participant 4:</strong> [Credential and access discussion redacted for publication.]</li>
+              <li><time>00:21:05</time> <strong>Participant 5:</strong> [Credential and access discussion redacted for publication.]</li>
+              <li><time>00:21:11</time> <strong>Participant 1:</strong> [Credential and access discussion redacted for publication.]</li>
+              <li><time>00:21:23</time> <strong>Participant 5:</strong> [Credential and access discussion redacted for publication.]</li>
+              <li><time>00:21:28</time> <strong>Participant 1:</strong> [Credential and access discussion redacted for publication.]</li>
+              <li><time>00:21:30</time> <strong>Participant 5:</strong> [Credential and access discussion redacted for publication.]</li>
+              <li><time>00:22:01</time> <strong>Participant 1:</strong> [Credential and access discussion redacted for publication.]</li>
+              <li><time>00:22:07</time> <strong>Participant 1:</strong> [Credential and access discussion redacted for publication.]</li>
+              <li><time>00:22:10</time> <strong>Participant 5:</strong> [Credential and access discussion redacted for publication.]</li>
+              <li><time>00:22:15</time> <strong>Participant 1:</strong> [Credential and access discussion redacted for publication.]</li>
+              <li><time>00:22:18</time> <strong>Participant 4:</strong> [Credential and access discussion redacted for publication.]</li>
+              <li><time>00:22:23</time> <strong>Participant 3:</strong> [Credential and access discussion redacted for publication.]</li>
+              <li><time>00:22:29</time> <strong>Participant 5:</strong> [Credential and access discussion redacted for publication.]</li>
+              <li><time>00:22:36</time> <strong>Participant 3:</strong> [Credential and access discussion redacted for publication.]</li>
+              <li><time>00:22:46</time> <strong>Participant 5:</strong> [Credential and access discussion redacted for publication.]</li>
+              <li><time>00:22:49</time> <strong>Participant 1:</strong> [Credential and access discussion redacted for publication.]</li>
+              <li><time>00:22:52</time> <strong>Participant 5:</strong> [Credential and access discussion redacted for publication.]</li>
+              <li><time>00:22:55</time> <strong>Participant 1:</strong> Hi yep and then the TLS security TLS security.</li>
+              <li><time>00:23:03</time> <strong>Participant 5:</strong> You see it?</li>
+              <li><time>00:23:05</time> <strong>Participant 3:</strong> You might need to scroll, there&#x27;s NO I got it. I got TLS security.</li>
+              <li><time>00:23:09</time> <strong>Participant 1:</strong> PLS applications, PLS applications.</li>
+              <li><time>00:23:14</time> <strong>Participant 5:</strong> Got it.</li>
+              <li><time>00:23:16</time> <strong>Participant 1:</strong> Provisioning.</li>
+              <li><time>00:23:19</time> <strong>Participant 5:</strong> Got it.</li>
+              <li><time>00:23:21</time> <strong>Participant 1:</strong> PLS protocol.</li>
+              <li><time>00:23:25</time> <strong>Participant 5:</strong> Got it.</li>
+              <li><time>00:23:27</time> <strong>Participant 1:</strong> And then select SSL V2/V3.</li>
+              <li><time>00:23:32</time> <strong>Participant 5:</strong> Got it.</li>
+              <li><time>00:23:34</time> <strong>Participant 1:</strong> And then go to network configuration.</li>
+              <li><time>00:23:37</time> <strong>Participant 5:</strong> I hit select and it doesn&#x27;t go to the next screen. I could hit back.</li>
+              <li><time>00:23:45</time> <strong>Participant 3:</strong> So you probably need to go back into the admin settings main menu, I would imagine.</li>
+              <li><time>00:23:50</time> <strong>Participant 5:</strong> Alright, but SSL is checked.</li>
+              <li><time>00:23:53</time> <strong>Participant 3:</strong> Perfect. Okay.</li>
+              <li><time>00:23:54</time> <strong>Participant 1:</strong> V two and V three, correct? Correct.</li>
+              <li><time>00:23:57</time> <strong>Participant 5:</strong> TLS protocol or you want me to go all the way back?</li>
+              <li><time>00:24:00</time> <strong>Participant 1:</strong> Just a select option one. It&#x27;s, I apologize. It&#x27;s been a little bit since I&#x27;ve done one of these. No fun. You&#x27;ll likely be in the normal admin settings because it says.</li>
+              <li><time>00:24:12</time> <strong>Participant 3:</strong> Network configuration, I imagine it&#x27;s gonna be in the out of the TLS, so just hit back until you get back to the normal admin settings menu.</li>
+              <li><time>00:24:19</time> <strong>Participant 5:</strong> Admin settings, ok.</li>
+              <li><time>00:24:21</time> <strong>Participant 3:</strong> And you want to find network configuration now? Yes. You are correct.</li>
+              <li><time>00:24:27</time> <strong>Participant 5:</strong> Network configuration, provisioning server. Yep, that&#x27;s what we&#x27;re looking for. Got it.</li>
+              <li><time>00:24:34</time> <strong>Participant 3:</strong> Okay, and then you&#x27;re gonna wanna go to highlight the go to the DHCP menu?</li>
+              <li><time>00:24:39</time> <strong>Participant 5:</strong> Yep. It.</li>
+              <li><time>00:24:41</time> <strong>Participant 3:</strong> Then you should see a boot server, a boot option. Select that, and then it&#x27;s gonna give you probably a few options and then pick static. Select that.</li>
+              <li><time>00:24:53</time> <strong>Participant 5:</strong> Done?</li>
+              <li><time>00:24:54</time> <strong>Participant 3:</strong> Okay, and then you can, you can exit the, the DHCP menu.</li>
+              <li><time>00:25:00</time> <strong>Participant 5:</strong> Okay, and then you should.</li>
+              <li><time>00:25:02</time> <strong>Participant 3:</strong> And then go to server type that should be on the the menu you&#x27;re on right now.</li>
+              <li><time>00:25:05</time> <strong>Participant 5:</strong> Yep.</li>
+              <li><time>00:25:06</time> <strong>Participant 3:</strong> Yep select that. Done. And then select HTTPS, then press ok after.</li>
+              <li><time>00:25:14</time> <strong>Participant 5:</strong> Done.</li>
+              <li><time>00:25:15</time> <strong>Participant 3:</strong> Okay, now yep correct Select that. Yep. And then we are doing.</li>
+              <li><time>00:25:23</time> <strong>Participant 1:</strong> Yeah, I was gonna say this is the fun part. You have to enter in this right here, the HTTPS. Okay hold on.</li>
+              <li><time>00:25:30</time> <strong>Participant 5:</strong> Address. I just gotta highlight that, ok. Oh cause I&#x27;m on freaking numbers, that&#x27;s very annoying. Okay.</li>
+              <li><time>00:25:39</time> <strong>Participant 3:</strong> Yeah, here, let me Gabe, do you wanna just highlight that maybe and we can maybe make it a little. I think hold on, I went back.</li>
+              <li><time>00:25:51</time> <strong>Participant 5:</strong> No, I wasn&#x27;t supposed to go back. I&#x27;m back on network configuration. **** it. I hit the arrow.</li>
+              <li><time>00:26:04</time> <strong>Participant 1:</strong> We want to get to the DHCP menu again.</li>
+              <li><time>00:26:08</time> <strong>Participant 5:</strong> Let me try to resume set up, provisioning server, is that what we were on?</li>
+              <li><time>00:26:19</time> <strong>Participant 3:</strong> We&#x27;re looking for server address, which should be in the the provisioning server DHCP boot server static is selected. Yep, you got it. DHC.</li>
+              <li><time>00:26:33</time> <strong>Participant 5:</strong> Menu yep and then boot server was static. Yep, but click on that.</li>
+              <li><time>00:26:43</time> <strong>Participant 3:</strong> That should be well if it&#x27;s already static, then you should be good. You can, you can back out of that menu then. And then, you should look for a server type option now.</li>
+              <li><time>00:26:53</time> <strong>Participant 5:</strong> Server type, I see it. Yep. And I hit HTTPS, that&#x27;s checked. Yep.</li>
+              <li><time>00:26:59</time> <strong>Participant 3:</strong> You can press the ok.</li>
+              <li><time>00:27:02</time> <strong>Participant 5:</strong> Okay, now server address.</li>
+              <li><time>00:27:04</time> <strong>Participant 3:</strong> Yes yep Select that.</li>
+              <li><time>00:27:06</time> <strong>Participant 5:</strong> Alright, so now I have the number four hold on I have the number four, which I I don&#x27;t want because I have to use HTTPS, so how do I delete four with and it&#x27;s not that little back arrow cause that took me back to the last menu.</li>
+              <li><time>00:27:25</time> <strong>Participant 3:</strong> Yeah, let me see.</li>
+              <li><time>00:27:29</time> <strong>Participant 1:</strong> They will. What? Oh, sorry, go ahead. I need to.</li>
+              <li><time>00:27:34</time> <strong>Participant 5:</strong> Delete that for. Oh, ok. Participant 2 did it. So I need to do.</li>
+              <li><time>00:27:41</time> <strong>Participant 3:</strong> Yep, we put it in the, in the Webex chat there, but I&#x27;m gonna let me.</li>
+              <li><time>00:27:45</time> <strong>Participant 5:</strong> Okay, I got H, UTP. Yep. This is a pain in the ***. Oh, I did let&#x27;s go back. Uppercase lowercase doesn&#x27;t matter, right?</li>
+              <li><time>00:28:00</time> <strong>Participant 3:</strong> Nope.</li>
+              <li><time>00:28:01</time> <strong>Participant 1:</strong> All has to be lowercase.</li>
+              <li><time>00:28:04</time> <strong>Participant 3:</strong> Is it giving you This should be in numeric, I believe this should be the.</li>
+              <li><time>00:28:14</time> <strong>Participant 5:</strong> I got HTTPS and then how do I get a colon?</li>
+              <li><time>00:28:20</time> <strong>Participant 3:</strong> I think it should be a period likely I imagine.</li>
+              <li><time>00:28:26</time> <strong>Participant 3:</strong> It&#x27;s like a, a.</li>
+              <li><time>00:28:28</time> <strong>Participant 1:</strong> It&#x27;s either the one or the.</li>
+              <li><time>00:28:32</time> <strong>Participant 5:</strong> The star of the pound?</li>
+              <li><time>00:28:34</time> <strong>Participant 1:</strong> Yeah, it&#x27;s gonna be one of those three. It&#x27;s either one star pound and one of those should pop up with a colon and the slashes. Nope, that&#x27;s not right?</li>
+              <li><time>00:28:51</time> <strong>Participant 5:</strong> Oops.</li>
+              <li><time>00:28:55</time> <strong>Participant 5:</strong> All that all that.</li>
+              <li><time>00:28:58</time> <strong>Participant 3:</strong> Yeah, it&#x27;s gonna be a star.</li>
+              <li><time>00:28:59</time> <strong>Participant 5:</strong> My lon yep colon and now I need to do two slashes. My slashes are the wrong way. Does that matter?</li>
+              <li><time>00:29:11</time> <strong>Participant 1:</strong> Yes, it does matter. They have to be forward slashes.</li>
+              <li><time>00:29:16</time> <strong>Participant 5:</strong> I hit the wrong thingy again, provisioning server. What was I on server address, right? Yes. Okay, that&#x27;s good. It just, it just deleted everything I got so far.</li>
+              <li><time>00:29:36</time> <strong>Participant 3:</strong> Here, this might be once you get past the HTTPS.</li>
+              <li><time>00:29:47</time> <strong>Participant 5:</strong> No, it has to be lowercase. It has to be lowercase? Yeah. Yeah, it does matter.</li>
+              <li><time>00:29:53</time> <strong>Participant 1:</strong> It says it&#x27;s case sensitive URL right here.</li>
+              <li><time>00:30:01</time> <strong>Participant 5:</strong> Where is the, where is the, highlighted again? The 1st one?</li>
+              <li><time>00:30:05</time> <strong>Participant 3:</strong> Yeah. Yes yep we need.</li>
+              <li><time>00:30:06</time> <strong>Participant 1:</strong> The US in the US, this one. Okay.</li>
+              <li><time>00:30:16</time> <strong>Participant 5:</strong> Student, yeah. Nope, it&#x27;s not that&#x27;s not right. The other one? Maybe. Yeah, there you go. P L C M E L, C, M.</li>
+              <li><time>00:30:43</time> <strong>Participant 5:</strong> Dot sip flash.</li>
+              <li><time>00:30:49</time> <strong>Participant 1:</strong> You got the.in there you said, right.</li>
+              <li><time>00:30:51</time> <strong>Participant 5:</strong> You? Okay.</li>
+              <li><time>00:31:25</time> <strong>Participant 1:</strong> Let me know once you type zip flash and.com in there all. Awesome. All right. Hit ok. I&#x27;m there. Yep. And then back or left twice to reach the save config screen. And then it&#x27;s going to say yes to begin the the yes soft key to begin the reboot sequence.</li>
+              <li><time>00:31:50</time> <strong>Participant 5:</strong> Reboot initiated single thing I opened, another phone. That phone might take a stock, but it.</li>
+              <li><time>00:32:08</time> <strong>Participant 1:</strong> Should come back up.</li>
+              <li><time>00:32:09</time> <strong>Participant 5:</strong> It&#x27;s already coming back up. Okay.</li>
+              <li><time>00:32:17</time> <strong>Participant 1:</strong> I don&#x27;t need to share my screen anymore, and you&#x27;ll know before I do whether that phone comes back up online, it takes a secret to pop up on my end.</li>
+              <li><time>00:32:38</time> <strong>Participant 1:</strong> Yeah. But it should come up with an extension, and everything.</li>
+              <li><time>00:32:48</time> <strong>Participant 5:</strong> Says provisioning successful. Right.</li>
+              <li><time>00:32:52</time> <strong>Participant 1:</strong> Cool, it&#x27;s a good thing.</li>
+              <li><time>00:32:54</time> <strong>Participant 5:</strong> Rebuild initiated.</li>
+              <li><time>00:32:57</time> <strong>Participant 1:</strong> It goes through a couple of reboots here. Got it.</li>
+              <li><time>00:33:06</time> <strong>Participant 1:</strong> Yeah wish the process was a little bit better to do these phones. There&#x27;s unfortunately NO real way to do these in bulk. They all do have to be touched individually like that.</li>
+              <li><time>00:33:27</time> <strong>Participant 5:</strong> Well, we have all the rest of the phones to look forward to, so.</li>
+              <li><time>00:33:32</time> <strong>Participant 1:</strong> Yeah, NO, I just I wanted to make you guys full aware, be completely transparent with you that this is the process for each one and then I throw the Mac address in and select the right device and it just, it should by all means come back up after a couple of reboots. I think it&#x27;s like two to five reboots, it depends.</li>
+              <li><time>00:33:53</time> <strong>Participant 5:</strong> It says downloading new application.</li>
+              <li><time>00:33:55</time> <strong>Participant 1:</strong> Okay yep, that&#x27;s a good sign.</li>
+              <li><time>00:33:58</time> <strong>Participant 4:</strong> Which means that it&#x27;s pointing to the Webex server, correct? Yep. And this will also do the firmware, so that&#x27;s the most up to date firmware.</li>
+              <li><time>00:34:10</time> <strong>Participant 1:</strong> It should yes.</li>
+              <li><time>00:34:15</time> <strong>Participant 4:</strong> I&#x27;ve reached my meeting. I&#x27;m gonna call you back for an update soon. But you don&#x27;t need me for this, right? No.</li>
+              <li><time>00:34:24</time> <strong>Participant 5:</strong> Participant 5 needs to be.</li>
+              <li><time>00:34:27</time> <strong>Participant 4:</strong> It just wants food for me.</li>
+              <li><time>00:34:31</time> <strong>Participant 5:</strong> Thank you there.</li>
+              <li><time>00:34:32</time> <strong>Participant 1:</strong> I&#x27;m unzipping. I like to work with you guys. You guys are funny. Oh, we wanted a test number, right? I apologize, I totally have to throw one in if we wanted to do test calling.</li>
+              <li><time>00:34:44</time> <strong>Participant 5:</strong> Yeah, we should try it. Okay.</li>
+              <li><time>00:34:47</time> <strong>Participant 1:</strong> Give me [redacted number] s, let me grab a test number. Okay. It&#x27;s gonna show as your main number temporarily, but, you can call out of it, you won&#x27;t be able to call in unless I assign it to.</li>
+              <li><time>00:34:57</time> <strong>Participant 5:</strong> Why does it have to be the main number? I wouldn&#x27;t want to mess with our main number. Let&#x27;s just.</li>
+              <li><time>00:35:00</time> <strong>Participant 1:</strong> No, NO, ok, so let me clarify that. So I have to set a main number for calls to go in and out of the system. It doesn&#x27;t need to be permanent. It&#x27;s just temporarily I set the temp number as the main number just so you can do testing on our network. No exactly, it&#x27;s not gonna do anything on your guys&#x27;s stuff. Yeah. No, NO, it does nothing to your current stuff I promise.</li>
+              <li><time>00:35:25</time> <strong>Participant 5:</strong> Yeah. Are you just gonna find.</li>
+              <li><time>00:35:26</time> <strong>Participant 1:</strong> Send that temporary number real quick, I sent it to one of my coworkers so I wouldn&#x27;t forget that Did it go?</li>
+              <li><time>00:35:43</time> <strong>Participant 5:</strong> Can&#x27;t hold it back anymore.</li>
+              <li><time>00:35:47</time> <strong>Participant 1:</strong> It&#x27;s still going through its process, correct? Yes.</li>
+              <li><time>00:35:50</time> <strong>Participant 5:</strong> Recycle.</li>
+              <li><time>00:36:00</time> <strong>Participant 1:</strong> Restart.</li>
+              <li><time>00:36:12</time> <strong>Participant 5:</strong> Okay bless you. Yeah.</li>
+              <li><time>00:36:29</time> <strong>Participant 1:</strong> Alright, you should be able to call out of that once it comes back up fully and I see it&#x27;s offline on my end, so that&#x27;s a good.</li>
+              <li><time>00:36:36</time> <strong>Participant 5:</strong> Wine unregistered.</li>
+              <li><time>00:36:39</time> <strong>Participant 1:</strong> Give it a moment here. Here it is, should I say ok? Give it a second here. Let me double check to make sure it has an IP on my end. Yeah, you can hit ok. Okay, then give it a second it should you want to see that as a dial tone? It does not. Does not yet. Okay.</li>
+              <li><time>00:37:04</time> <strong>Participant 5:</strong> Service unavailable. Service unavailable.</li>
+              <li><time>00:37:07</time> <strong>Participant 1:</strong> Give it a second here because I see it&#x27;s registered, it has an IP address that says everything it&#x27;s supposed to be seeing on mine, so let&#x27;s give it a moment. We might just have to reboot it one more at a time.</li>
+              <li><time>00:37:21</time> <strong>Participant 5:</strong> Now I have a, now I have another.</li>
+              <li><time>00:37:23</time> <strong>Participant 1:</strong> Awesome. Here hold on. Follow your cell phone or however you want to do it, it should dial out. Yeah, I see it online and it just takes a moment.</li>
+              <li><time>00:37:36</time> <strong>Participant 5:</strong> Please keep you a message at the. So it did, it didn&#x27;t dial, but it did reach my cell phone. Okay. Hey, it&#x27;s me calling from myself. Thank you. So I should get a voicemail now, right?</li>
+              <li><time>00:37:49</time> <strong>Participant 1:</strong> Yes sir. You won&#x27;t be able to call the number back because I haven&#x27;t assigned it to anything besides it being the.</li>
+              <li><time>00:37:55</time> <strong>Participant 5:</strong> So why didn&#x27;t why did it go directly to voicemail on myself?</li>
+              <li><time>00:38:00</time> <strong>Participant 1:</strong> It didn&#x27;t ring on the phone. It it just.</li>
+              <li><time>00:38:04</time> <strong>Participant 5:</strong> Immediately had my.</li>
+              <li><time>00:38:07</time> <strong>Participant 1:</strong> That is a good question. I genuinely don&#x27;t know off the top of my head. It should ring you, it might just be still finishing what it&#x27;s doing. You&#x27;re not on Dnd or anything, right? No? Okay.</li>
+              <li><time>00:38:21</time> <strong>Participant 5:</strong> And I was holding my phone it didn&#x27;t, it didn&#x27;t even ring. Okay.</li>
+              <li><time>00:38:25</time> <strong>Participant 1:</strong> Do me a favor, call I&#x27;m gonna give you another number to call. It&#x27;s gonna be my cell phone I just want to see if it goes to my voicemail or if it rings. What is it? [redacted number]. Let me know if that just goes right to my voicemail. That comes up, that comes up.</li>
+              <li><time>00:38:47</time> <strong>Participant 5:</strong> Awesome.</li>
+              <li><time>00:38:49</time> <strong>Participant 1:</strong> That&#x27;s weird. Yeah you want to try yourself one more time? This isn&#x27;t Yeah, I think I see the issue with this number. It shows up as spam for me. Our test numbers sometimes do that. So it might just be auto blocking it.</li>
+              <li><time>00:39:05</time> <strong>Participant 5:</strong> It is auto blocking it, it&#x27;s showing. Yeah, it&#x27;s just going directly to my my voicemail. Yeah, so.</li>
+              <li><time>00:39:10</time> <strong>Participant 1:</strong> It&#x27;s definitely just auto blocking it because it&#x27;s marked as spam. Once we get your real numbers over, it won&#x27;t do that. Gotcha. Especially since you guys filled everything out with the link with the white list stuff we sent you, right?</li>
+              <li><time>00:39:23</time> <strong>Participant 5:</strong> Meaning, we haven&#x27;t done any of that yet. I didn&#x27;t see that.</li>
+              <li><time>00:39:28</time> <strong>Participant 1:</strong> Oh oh let me send that over to you guys. I&#x27;m sorry. I thought we sent that to you. No, the the you mean the the white.</li>
+              <li><time>00:39:35</time> <strong>Participant 5:</strong> Isn&#x27;t the worksheet? No, NO.</li>
+              <li><time>00:39:37</time> <strong>Participant 1:</strong> Nope, this is something entirely different that we, we were supposed to send you a white listing document. Alright, so.</li>
+              <li><time>00:39:44</time> <strong>Participant 5:</strong> Already.</li>
+              <li><time>00:39:44</time> <strong>Participant 1:</strong> I just posted in the chat, so if you click the three dots in the chat where it says more panels.</li>
+              <li><time>00:39:49</time> <strong>Participant 5:</strong> Neither of us are in front of it. Neither of us are in front of a computer right now.</li>
+              <li><time>00:39:53</time> <strong>Participant 1:</strong> Oh, ok. I can email it to you. Sorry about that. It&#x27;s ok. Yep. Let me find our email. I&#x27;m gonna just email it to Participant 5 because he&#x27;s right up there at the top of my inbox. Amazing the files, inserts. Yeah, this is normally what we&#x27;ll send you if your number ever pops up a spam or you.</li>
+              <li><time>00:40:22</time> <strong>Participant 1:</strong> Need to register your numbers so they most likely don&#x27;t pop up a spam. Sometimes they can pop up a spam. It just means that somebody marked it as spam when you got the call or when they got the call because they didn&#x27;t recognize the number I don&#x27;t know why people do it, but they do. Even if it&#x27;s a legitimate number that they&#x27;ve most likely had dealings with in the past. I&#x27;ve had my own number marked as Sam and I had to do this myself.</li>
+              <li><time>00:40:46</time> <strong>Participant 1:</strong> For work, of course, of course. And like I&#x27;ve I never call anybody I don&#x27;t know on my work number.</li>
+              <li><time>00:40:54</time> <strong>Participant 5:</strong> Why would you?</li>
+              <li><time>00:40:56</time> <strong>Participant 1:</strong> Yeah. I just sent that over to you. All right.</li>
+              <li><time>00:41:11</time> <strong>Participant 5:</strong> Okay, I brought my computer over so I&#x27;ll let you know when we get it. Awesome.</li>
+              <li><time>00:41:22</time> <strong>Participant 1:</strong> I&#x27;m glad we got the one point up and you guys know what the process is basically right now. That&#x27;s a good thing, and this meeting is recorded, so what we discussed today, I&#x27;ll make sure these are sent back over to you the recordings in case we need it for the future. Awesome. These are Participant 3&#x27;s meetings so I don&#x27;t get them directly. I&#x27;ll make sure I message him right now actually for when the meeting&#x27;s over. Gotcha.</li>
+              <li><time>00:41:45</time> <strong>Participant 5:</strong> Alright, so we&#x27;ll forward that to me. So take a look at it.</li>
+              <li><time>00:41:51</time> <strong>Participant 1:</strong> Yeah, so you don&#x27;t have to do all this really technically un unless you&#x27;re having issues. I do recommend, you know, if you know all the numbers that are of the issue, if you have the issue, just put those ones in and like Participant 3 was saying the other day.</li>
+              <li><time>00:42:09</time> <strong>Participant 1:</strong> When you go to these websites, well, I I don&#x27;t actually don&#x27;t remember if we went over this, but if we didn&#x27;t, when you go to these websites, the carrier you&#x27;re going to be saying is yours is veracity or 1st digital. It doesn&#x27;t matter which one you put, they&#x27;ll know, because technically we are not the PSTN, Veracity 1st digitals that PSTN or number holder carrier person.</li>
+              <li><time>00:42:32</time> <strong>Participant 5:</strong> But 1st digital is not on this list.</li>
+              <li><time>00:42:38</time> <strong>Participant 1:</strong> No, so when you&#x27;re submitting, if it asks you what your carrier is, that&#x27;s what I mean. Yeah, so you don&#x27;t yeah so the like AT and T verizon, T Mobile ones and the higher one, it might ask you your carrier, that&#x27;s when you would say it&#x27;s veracity or 1st digital. I like to do 1st digital/veracity on my computer. If anybody ever, when I, when I do mine, because my number, like I said, my number occasionally pops up a spam cause somebody marks it as spam. Sometimes.</li>
+              <li><time>00:43:10</time> <strong>Participant 5:</strong> What much to do with this?</li>
+              <li><time>00:43:11</time> <strong>Participant 1:</strong> But I would say keep an eye if you yeah if you know who the carrier is that&#x27;s causing the issue, specifically go to that carrier 1st with and just follow what the steps in the link, it&#x27;s not too bad. It&#x27;s very easy on this, I promise. If your numbers pop up a spam, this is what you want to do is just follow the carrier interpretation management portal directions when you click on those links. Other than that guys, did you guys want to try another phone?</li>
+              <li><time>00:43:41</time> <strong>Participant 5:</strong> This is fine.</li>
+              <li><time>00:43:44</time> <strong>Participant 1:</strong> Okay, I yeah, I just want to send you that we got through this.</li>
+              <li><time>00:43:49</time> <strong>Participant 5:</strong> No, I am expected. Yeah, I&#x27;m glad that the phone worked without needing to buy new phones. I, I just want to get the ports underway given all the pressure that they&#x27;re trying to I completely agree.</li>
+              <li><time>00:44:05</time> <strong>Participant 1:</strong> I completely agree with you there. They were submitted, so.</li>
+              <li><time>00:44:09</time> <strong>Participant 5:</strong> Yeah. And I just resubmitted with NO.</li>
+              <li><time>00:44:12</time> <strong>Participant 1:</strong> I didn&#x27;t resubmit, I updated the LOA document that you guys sent over and sent it over to our carrier to their translations team. So it goes directly to the people that actually do the porting for us on their end. So once that&#x27;s all through, all I need to do is add the numbers, assign the numbers, and then you guys will be basically all ready to go once the port actually goes through.</li>
+              <li><time>00:44:34</time> <strong>Participant 5:</strong> See the new one that you sent, I just want to confirm. Can I remember Omar is on this new one co customer contact is me. Oh yeah. Omar was on there for billing originally. He&#x27;s, he&#x27;s still on there, but now he&#x27;s the signer also. Yep.</li>
+              <li><time>00:44:56</time> <strong>Participant 5:</strong> So when we&#x27;re looking at the numbers, right, we&#x27;re at [redacted number], so the DID list is what you guys are using for the port or is it the other document that we sent?</li>
+              <li><time>00:45:13</time> <strong>Participant 1:</strong> So the LOA and the DID lists are what we&#x27;re using for the port because they look at the LOA for that main number to be like, what&#x27;s the account main number? Right.</li>
+              <li><time>00:45:22</time> <strong>Participant 5:</strong> That&#x27;s correct. And Omar has signed it and then the DID list.</li>
+              <li><time>00:45:27</time> <strong>Participant 1:</strong> The DID list is just those all the other numbers where it says C attached list. That tells us which numbers you&#x27;re actually porting.</li>
+              <li><time>00:45:34</time> <strong>Participant 5:</strong> Which was probably the same as this.</li>
+              <li><time>00:45:37</time> <strong>Participant 1:</strong> Yeah, so is you guys sent over I think [redacted number] numbers if I remember correctly?</li>
+              <li><time>00:45:43</time> <strong>Participant 5:</strong> Yeah. Well, we&#x27;ll go up to that. All right. [redacted number], yeah. [redacted number] is correct. [redacted number].</li>
+              <li><time>00:45:50</time> <strong>Participant 1:</strong> Okay, yeah, I was gonna say I, I think you guys are counting an extra square there. That&#x27;s good.</li>
+              <li><time>00:45:57</time> <strong>Participant 5:</strong> [redacted number] numbers and then the and then the rest are cancels. I mean Do you guys do the canceling for us also?</li>
+              <li><time>00:46:09</time> <strong>Participant 1:</strong> No, that is something you guys have to do on your end unfortunately. I&#x27;m not allowed to do any permissions on.</li>
+              <li><time>00:46:17</time> <strong>Participant 5:</strong> It&#x27;ll happen when we kill our contract with spectrum.</li>
+              <li><time>00:46:22</time> <strong>Participant 1:</strong> Yep exactly, yeah. I don&#x27;t have any control of being able to cancel it for you just cause that we&#x27;re not allowed to really talk to your current carrier and then.</li>
+              <li><time>00:46:32</time> <strong>Participant 5:</strong> The reason why there were only some of the numbers.</li>
+              <li><time>00:46:38</time> <strong>Participant 1:</strong> Tom.</li>
+              <li><time>00:46:40</time> <strong>Participant 5:</strong> In other words like Participant 3 sent one email, there are five numbers that have been approved and then the original email that he sent had, you know, or what we sent, what we received from RingCentral, there were like [redacted number] numbers. So if we&#x27;re doing [redacted number] minus like [redacted number] plus, so it&#x27;s like, we just want to make sure that all those [redacted number] reported. So we&#x27;ll just.</li>
+              <li><time>00:47:10</time> <strong>Participant 1:</strong> Yeah, I was gonna say I got like about [redacted number] something emails while I was on lunch. I my phone was blown up and I was like all your numbers were like, hey, wrong sign or hey wrong sign or hey wrong sign. So, yeah. So once it goes through, you&#x27;ll probably get another notification.</li>
+              <li><time>00:47:27</time> <strong>Participant 5:</strong> Great numbers.</li>
+              <li><time>00:47:29</time> <strong>Participant 1:</strong> We&#x27;ll get notifications as well. I&#x27;ll keep up to date on that. Participant 3 will as well. If you guys want any updates during the process, don&#x27;t hesitate to reach out.</li>
+              <li><time>00:47:37</time> <strong>Participant 5:</strong> Or just if you get a good update, you know, let us know also if I can.</li>
+              <li><time>00:47:41</time> <strong>Participant 1:</strong> We&#x27;ll do tomorrow.</li>
+              <li><time>00:47:43</time> <strong>Participant 5:</strong> So this phone right now, it can&#x27;t, it cannot dial out. Is that correct?</li>
+              <li><time>00:47:50</time> <strong>Participant 1:</strong> You can dial out. It cannot receive calls in unless you want me to assign the number to you and then it&#x27;ll just ring you.</li>
+              <li><time>00:47:58</time> <strong>Participant 5:</strong> It cannot receive calls in. All right, well, I can, I can.</li>
+              <li><time>00:48:03</time> <strong>Participant 1:</strong> Yeah, I was gonna say I can set it so it can. It&#x27;s just NO numbers assigned to anybody right now, it&#x27;s set as the main number so it can do outbound calling. Like I have to actually assign it to somebody to purchase.</li>
+              <li><time>00:48:14</time> <strong>Participant 5:</strong> Do Let&#x27;s get this port process going and then we&#x27;ll see about assigning it.</li>
+              <li><time>00:48:20</time> <strong>Participant 1:</strong> Awesome. All right. All right, thanks for your help. Yeah, NO problem. Any other questions or anything I can do for you.</li>
+              <li><time>00:48:25</time> <strong>Participant 5:</strong> Nope. Appreciate it. Yeah we&#x27;ll get the copy of all this info so that we can try to grab the process and it&#x27;ll go faster for each phone.</li>
+              <li><time>00:48:36</time> <strong>Participant 1:</strong> Awesome. Yeah. You guys call flow is pretty simple too cause it&#x27;s just the receptionist and she just forwards her phone to a number when she&#x27;s on lunch, right? Just so I remember. Yeah. Okay. Yeah, then everybody else has direct dial, so that&#x27;s eas.</li>
+              <li><time>00:48:51</time> <strong>Participant 5:</strong> Okay, we&#x27;ll be in touch. Thank you. Oh, actually I had one more question. I&#x27;m so sorry. That&#x27;s ok. So you.</li>
+              <li><time>00:48:57</time> <strong>Participant 1:</strong> You guys gave me documents yesterday, the user spreadsheet with updated red lines. I just wanted to confirm there was [redacted number] users that their names are in red, but the whole line is not red. Do you still want me to add those ones or is there something special that they were made red like text?</li>
+              <li><time>00:49:18</time> <strong>Participant 5:</strong> Is this on the DID list? No.</li>
+              <li><time>00:49:20</time> <strong>Participant 1:</strong> Let me share my screen real quick. Just so you can see it&#x27;s on the user spreadsheet. Okay, let me check.</li>
+              <li><time>00:49:27</time> <strong>Participant 5:</strong> I&#x27;ll use the spreadsheet quick Webex user. So what was the color coding here?</li>
+              <li><time>00:49:35</time> <strong>Participant 1:</strong> So the green is what I added. I didn&#x27;t do the phone number yet because we don&#x27;t want to add those right away, but these people in with the red labeling, the text, not the Not the red highlight, but the red text right here. These are red texts. Are those ones supposed to be highlighted right now? Hold on.</li>
+              <li><time>00:49:57</time> <strong>Participant 5:</strong> No, those are fine. No, those are fine.</li>
+              <li><time>00:50:00</time> <strong>Participant 1:</strong> Okay, so add these in.</li>
+              <li><time>00:50:02</time> <strong>Participant 5:</strong> That need to be deleted are the ones that I highlighted the rows in red.</li>
+              <li><time>00:50:06</time> <strong>Participant 1:</strong> Okay, awesome, yeah. Then that&#x27;s I didn&#x27;t even have those ones in. I just want to make.</li>
+              <li><time>00:50:11</time> <strong>Participant 5:</strong> Sure yeah keeping the numbers just not the users.</li>
+              <li><time>00:50:14</time> <strong>Participant 1:</strong> Gotcha, ok. That&#x27;s perfectly fine. Alright, well then I have nothing else for you guys. You guys have a wonderful rest of your day. If I don&#x27;t talk to you, the rest of today, you know, hopefully I have an update for you tomorrow or.</li>
+              <li><time>00:50:28</time> <strong>Participant 5:</strong> Yeah early next week. Great. I really appreciate your Friday.</li>
+              <li><time>00:50:33</time> <strong>Participant 1:</strong> Yes. Yeah exactly hopefully Friday. At the latest, but you guys have a great rest of your day and I will talk to you soon, ok? Bye. Bye.</li>
+            </ol>
+          </details>
         </article>
       </section>
 
