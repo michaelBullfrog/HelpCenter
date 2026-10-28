@@ -42,6 +42,7 @@
         <button class="tab" data-tab="meraki">Meraki</button>
         <button class="tab" data-tab="clerk-chat">Clerk Chat</button>
         <button class="tab" data-tab="firstdigital">FirstDigital</button>
+        <button class="tab" data-tab="migrations">Migrations</button>
 <button class="tab" data-tab="meetings">Meetings</button>
 <button class="tab" data-tab="apis">APIs</button>
 <button class="tab" data-tab="troubleshooting">Troubleshooting</button>
@@ -1532,6 +1533,60 @@
     </ul>
   </article>
 </section>
+
+      
+      <section id="migrations" class="panel">
+        <div class="section-header">
+          <span class="eyebrow">Migration procedures</span>
+          <h2>Migrations</h2>
+          <p>Field-tested migration procedures and validation checklists. The procedure below documents the Rudd Management pilot migration from RingCentral to Webex using an existing Poly desk phone, demonstrated October 28, 2026.</p>
+        </div>
+        <article class="article-card" data-keywords="RingCentral Webex Poly phone migration provisioning firmware factory reset Rudd">
+          <h3>RingCentral to Webex: migrate an existing Poly desk phone</h3>
+          <p><strong>Scope:</strong> A single existing Poly phone migrated in a test before bulk cutover. Specific menus, firmware compatibility, provisioning addresses, and passwords vary by Poly model and software version. Complete one pilot successfully before repeating per handset.</p>
+          <p><strong>Before you begin:</strong> Confirm the phone model, MAC address, existing user/line assignment, admin access to RingCentral, access to the physical phone, its network connectivity, and that the device is supported on the target Webex platform. Identify the intended Webex user and have the approved provisioning instructions for that exact model available.</p>
+          <ol>
+            <li><strong>Confirm migration and number-port readiness.</strong> Review the customer workbook, the set of numbers requested for porting, pending or approved port dates, and any updated Letter of Authorization (LOA). Do not assume every number shown on a rejection or exception list represents the complete port order. Verify which users are retained versus removed before applying changes.</li>
+            <li><strong>Prepare the Webex assignment.</strong> Have the Webex administrator identify the target user and add or stage the handset by its exact MAC address using the correct supported device type. In the pilot, the engineer performed the Webex-side setup while the customer handled the physical phone.</li>
+            <li><strong>Disassociate the handset from RingCentral.</strong> Sign in with suitable RingCentral administrative permissions. In <strong>Phone System → Phones &amp; Devices</strong>, locate the handset assigned to its existing user. Use <strong>Change Phone</strong> to replace/disassociate the physical device (the team selected the RingCentral app as a replacement), then locate the resulting handset in <strong>Unassigned</strong>, select it, and delete the handset entry. Confirm the handset is no longer provisioned by RingCentral. <strong>Important:</strong> Do not confuse <em>Remove Line</em> with removing the device; preserve phone-number ownership, assignments and porting plans as required.</li>
+            <li><strong>Perform a factory reset on the Poly phone.</strong> The initial boot-time <strong>Cancel → hold 1, 3, 5</strong> approach did not work on the pilot phone because the expected Cancel prompt did not appear. Instead, use the phone's <strong>Home → Settings → Advanced → Administrative Settings → Reset to Defaults → Reset to Factory</strong> menu, confirm the reset, and let it reboot. The pilot accepted an admin password during this flow, but do not assume recorded example passwords will apply to other handsets; obtain the authorized device admin credential.</li>
+            <li><strong>Open advanced administration again.</strong> On the reset handset, return to <strong>Settings → Advanced → Administrative Settings</strong>. The pilot displayed password prompts after resetting. Verify or set admin credentials according to the approved customer procedure, rather than relying on temporary test credentials.</li>
+            <li><strong>Configure the provisioning security option required for this firmware.</strong> In the recording, the guided path was <strong>Administrative Settings → TLS Security → TLS Applications → Provisioning → TLS Protocol</strong>, and the team selected <strong>SSL v2/v3</strong>. <strong>Security warning:</strong> SSLv2/v3 are obsolete and insecure; this is a record of the pilot, <em>not</em> a general configuration recommendation. Verify current vendor-approved TLS settings before implementing this on production devices.</li>
+            <li><strong>Set the provisioning boot source.</strong> Go back to <strong>Administrative Settings → Network Configuration → Provisioning Server → DHCP → Boot Server</strong>, then choose <strong>Static</strong> as demonstrated.</li>
+            <li><strong>Set the provisioning server type.</strong> In <strong>Provisioning Server</strong>, set <strong>Server Type → HTTPS</strong>.</li>
+            <li><strong>Enter the approved provisioning address.</strong> In <strong>Provisioning Server → Server Address</strong>, enter the full, exact vendor-approved HTTPS address for the phone model and migration path. The recording emphasized exact capitalization and forward slashes. <strong>Do not guess the endpoint:</strong> the spoken transcript does not establish a reliably transcribable complete URL; obtain it from the current Cisco/Webex Poly migration guide or approved provisioning worksheet.</li>
+            <li><strong>Save configuration and reboot.</strong> Press <strong>OK</strong> to save the server address. Navigate back to the <strong>Save Config</strong> confirmation, then choose <strong>Yes</strong> to initiate reboot. Do not interrupt firmware downloads. The pilot went through multiple reboots and displayed messages including <em>Provisioning Successful</em> and <em>Downloading New Application</em>.</li>
+            <li><strong>Confirm Webex registration.</strong> In the target Webex administration view, confirm that the assigned MAC address/device appears online or registered, and that it has an IP address and the expected user/extension. A transient <em>Line Unregistered</em> or <em>Service Unavailable</em> message may appear during setup; allow provisioning to complete and troubleshoot if it persists.</li>
+            <li><strong>Run test calls.</strong> Have the engineer provide a temporary outbound test number if production numbers have not yet ported. Place a call to at least one known reachable external number. In this pilot, a call to one cell went directly to voicemail because the test caller ID was marked as spam, while a second external call connected. Distinguish caller-ID blocking from a registration failure. Test inbound calling only after a DID is assigned and routed to the destination.</li>
+            <li><strong>Record completion and repeat per device.</strong> Record the phone model, MAC address, intended user, provisioning result, online state, test call outcome, and unresolved issues. Repeat the hands-on provisioning process for each remaining phone; the pilot team noted the phones needed to be handled individually. Reconcile user and DID spreadsheets before production cutover.</li>
+          </ol>
+        </article>
+        <article class="article-card" data-keywords="migration checklist validation porting users devices line registration">
+          <h3>Migration sign-off checklist</h3>
+          <ul>
+            <li>☐ Port list, LOA, cutover date, and user/number spreadsheet reconciled</li>
+            <li>☐ RingCentral physical device disassociated without losing a number that must be retained</li>
+            <li>☐ MAC address and Webex user assignment verified</li>
+            <li>☐ Factory reset completed with approved admin access</li>
+            <li>☐ Current, vendor-approved provisioning URL and TLS settings verified</li>
+            <li>☐ Device firmware/provisioning completed and device registered online in Webex</li>
+            <li>☐ Outbound call tested; inbound call tested once a number is assigned</li>
+            <li>☐ Caller-ID spam labeling or whitelisting follow-up captured if needed</li>
+            <li>☐ Results and exceptions recorded for the remaining handset migration schedule</li>
+          </ul>
+        </article>
+        <article class="article-card" data-keywords="migration troubleshooting reset cancel poly RingCentral Webex">
+          <h3>Common issues observed during the pilot</h3>
+          <ul>
+            <li><strong>No Cancel prompt on reboot:</strong> Try the authorized menu-based factory reset instead of repeatedly attempting the boot-time key sequence.</li>
+            <li><strong>Phone reprovisions to RingCentral:</strong> Check the original device is truly removed/unassigned and deleted from RingCentral before resetting and rebooting.</li>
+            <li><strong>Unable to enter server URL:</strong> Check keypad text-entry mode and special characters. HTTPS requires <code>https://</code> with forward slashes, and the supplied hostname must match exactly.</li>
+            <li><strong>Provisioning succeeds but calls fail initially:</strong> Check online/registered status, assigned extension and DID, network connectivity, and whether additional reboot/provisioning is occurring.</li>
+            <li><strong>Calls go straight to recipient voicemail:</strong> Test another destination and check whether the temporary caller ID is being blocked or tagged spam; do not immediately assume phone provisioning failed.</li>
+          </ul>
+          <p><strong>Source:</strong> Rudd Mgmt. Test Migration meeting recording and caption transcript, October 28, 2026 (approximately 51 minutes). This documents a pilot, not verified instructions for every Poly model or a complete production cutover plan.</p>
+        </article>
+      </section>
 
       <section id="firstdigital" class="panel">
   <div class="section-header">
